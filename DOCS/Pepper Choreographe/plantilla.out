@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section*.2}{1. INTRODUCCI\323N}{}% 1
+\BOOKMARK [1][-]{section*.3}{2. \040PLANTEAMIENTO DE LA SOLUCI\323N}{}% 2
+\BOOKMARK [2][-]{section*.4}{2.1 \040OBJETIVOS}{section*.3}% 3
+\BOOKMARK [2][-]{section*.5}{2.2 \040FUNDAMENTOS}{section*.3}% 4
+\BOOKMARK [2][-]{section*.6}{2.3 \040POSIBLES LIMITACIONES}{section*.3}% 5
+\BOOKMARK [2][-]{section*.7}{2.4 \040RESULTADOS ESPERADOS}{section*.3}% 6
+\BOOKMARK [2][-]{section*.8}{2.5 \040TRABAJO FUTURO}{section*.3}% 7
+\BOOKMARK [1][-]{section*.9}{3. \040DISE\321O DE LA SOLUCI\323N}{}% 8
+\BOOKMARK [2][-]{section*.10}{3.1 \040ARQUITECTURA}{section*.9}% 9
+\BOOKMARK [2][-]{section*.11}{3.2 \040DISE\321O DE PLAZA DE ESTACIONAMIENTO EST\301NDAR}{section*.9}% 10
+\BOOKMARK [2][-]{section*.12}{3.3 \040MEDIOS SOFTWARE}{section*.9}% 11
+\BOOKMARK [3][-]{section*.13}{3.3.1 \040NODE-RED}{section*.12}% 12
+\BOOKMARK [3][-]{section*.14}{3.3.2 \040BLUEMIX}{section*.12}% 13
+\BOOKMARK [3][-]{section*.15}{3.3.3 \040CLOUDANT}{section*.12}% 14
+\BOOKMARK [3][-]{section*.16}{3.3.4 \040NODE.JS}{section*.12}% 15
+\BOOKMARK [3][-]{section*.17}{3.3.5 \040APACHE CORDOVA}{section*.12}% 16
+\BOOKMARK [2][-]{section*.18}{3.4 \040MEDIOS HARDWARE}{section*.9}% 17
+\BOOKMARK [3][-]{section*.19}{3.4.1 \040SENSORES}{section*.18}% 18
+\BOOKMARK [3][-]{section*.20}{3.4.2 \040ELEMENTOS DE CONECTIVIDAD}{section*.18}% 19
+\BOOKMARK [1][-]{section*.21}{4. \040EXPERIENCIA DE USUARIO}{}% 20
+\BOOKMARK [2][-]{section*.22}{4.1 \040PRINCIPIOS DE DISE\321O}{section*.21}% 21
+\BOOKMARK [3][-]{section*.23}{4.1.1 \040INTERFAZ DE LA APLICACI\323N}{section*.22}% 22
+\BOOKMARK [2][-]{section*.24}{4.2 \040SOLUCIONES DE ACCESIBILIDAD}{section*.21}% 23
+\BOOKMARK [1][-]{section*.25}{5. \040CONCLUSIONES}{}% 24
+\BOOKMARK [1][-]{section*.26}{6. REFERENCIAS}{}% 25
+\BOOKMARK [1][-]{section*.27}{ANEXOS}{}% 26
+\BOOKMARK [2][-]{section*.28}{ANEXO I \040ENLACES DE CONTENIDO}{section*.27}% 27

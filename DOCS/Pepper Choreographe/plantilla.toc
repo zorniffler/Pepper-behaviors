@@ -1,0 +1,28 @@
+\select@language {spanish}
+\contentsline {section}{1.\ INTRODUCCI\'ON}{1}{section*.2}
+\contentsline {section}{2. \ PLANTEAMIENTO DE LA SOLUCI\'ON}{2}{section*.3}
+\contentsline {subsection}{2.1 \ OBJETIVOS}{2}{section*.4}
+\contentsline {subsection}{2.2 \ FUNDAMENTOS}{3}{section*.5}
+\contentsline {subsection}{2.3 \ POSIBLES LIMITACIONES}{4}{section*.6}
+\contentsline {subsection}{2.4 \ RESULTADOS ESPERADOS}{5}{section*.7}
+\contentsline {subsection}{2.5 \ TRABAJO FUTURO}{5}{section*.8}
+\contentsline {section}{3. \ DISE\~NO DE LA SOLUCI\'ON}{7}{section*.9}
+\contentsline {subsection}{3.1 \ ARQUITECTURA}{7}{section*.10}
+\contentsline {subsection}{3.2 \ DISE\~NO DE PLAZA DE ESTACIONAMIENTO EST\'ANDAR}{8}{section*.11}
+\contentsline {subsection}{3.3 \ MEDIOS SOFTWARE}{8}{section*.12}
+\contentsline {subsubsection}{3.3.1 \ NODE-RED}{8}{section*.13}
+\contentsline {subsubsection}{3.3.2 \ BLUEMIX}{10}{section*.14}
+\contentsline {subsubsection}{3.3.3 \ CLOUDANT}{10}{section*.15}
+\contentsline {subsubsection}{3.3.4 \ NODE.JS}{11}{section*.16}
+\contentsline {subsubsection}{3.3.5 \ APACHE CORDOVA}{11}{section*.17}
+\contentsline {subsection}{3.4 \ MEDIOS HARDWARE}{13}{section*.18}
+\contentsline {subsubsection}{3.4.1 \ SENSORES}{13}{section*.19}
+\contentsline {subsubsection}{3.4.2 \ ELEMENTOS DE CONECTIVIDAD}{15}{section*.20}
+\contentsline {section}{4. \ EXPERIENCIA DE USUARIO}{18}{section*.21}
+\contentsline {subsection}{4.1 \ PRINCIPIOS DE DISE\~NO}{18}{section*.22}
+\contentsline {subsubsection}{4.1.1 \ INTERFAZ DE LA APLICACI\'ON}{18}{section*.23}
+\contentsline {subsection}{4.2 \ SOLUCIONES DE ACCESIBILIDAD}{23}{section*.24}
+\contentsline {section}{5. \ CONCLUSIONES}{24}{section*.25}
+\contentsline {section}{6. REFERENCIAS}{25}{section*.26}
+\contentsline {section}{ANEXOS}{26}{section*.27}
+\contentsline {subsection}{ANEXO I \ ENLACES DE CONTENIDO}{26}{section*.28}

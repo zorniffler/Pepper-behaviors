@@ -1,31 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="proyectorobotica-0e4919" version="0.0.0">
+<package uuid="arproject_groupb-0e4919" version="0.0.0">
  <names>
-  <name lang="en_US">Untitled</name>
+  <name lang="en_US">ARProject_GroupB</name>
  </names>
+ <descriptions>
+  <description lang="en_US">We are the world, we are the children.</description>
+  <description lang="es_ES">We are the world</description>
+ </descriptions>
  <supportedLanguages>
-  <language>es_ES</language>
   <language>en_US</language>
  </supportedLanguages>
  <descriptionLanguages>
-  <language>es_ES</language>
   <language>en_US</language>
  </descriptionLanguages>
  <contents>
-  <behaviorContent path="behavior_1">
+  <behaviorContent path="SpeechCommands">
    <userRequestable/>
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="behavior_2">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
-  <behaviorContent path="Come Here">
+  <behaviorContent path="ComeHere">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="Faces">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="FollowMe">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

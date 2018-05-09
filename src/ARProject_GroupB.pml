@@ -10,6 +10,7 @@
     <Dialogs />
     <Resources>
         <File name="move" src="SpeechCommands/move.pmt" />
+        <File name="choice_sentences" src="Faces/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics />
     <IgnoredPaths />

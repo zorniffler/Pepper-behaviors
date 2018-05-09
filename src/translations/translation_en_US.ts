@@ -11,6 +11,25 @@
         </message>
     </context>
     <context>
+        <name>Faces/behavior.xar:/Awaken</name>
+        <message>
+            <source>Mezame tamae, waga aruji tachi yo</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Mezame tamae, waga aruji tachi yo</translation>
+        </message>
+        <message>
+            <source>Mesame tamae, vaga aruyi tachi yo</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Mesame tamae, vaga aruyi tachi yo</translation>
+        </message>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>Mesame tamae, vaga aruyi taki yo</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Mesame tamae, vaga aruyi taki yo</translation>
+        </message>
+    </context>
+    <context>
         <name>Faces/behavior.xar:/Say</name>
         <message>
             <location filename="Faces/behavior.xar" line="0"/>
@@ -31,10 +50,29 @@
     <context>
         <name>Faces/behavior.xar:/Say (2)</name>
         <message>
-            <location filename="Faces/behavior.xar" line="0"/>
             <source>You are so ugly</source>
             <comment>Text</comment>
-            <translation type="unfinished">You are so ugly</translation>
+            <translation type="obsolete">You are so ugly</translation>
+        </message>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>You look like Quasimodo</source>
+            <comment>Text</comment>
+            <translation type="unfinished">You look like Quasimodo</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Say (3)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>Nani</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Nani</translation>
         </message>
     </context>
     <context>
@@ -65,10 +103,55 @@
             <translation type="obsolete">rero</translation>
         </message>
         <message>
-            <location filename="FollowMe/behavior.xar" line="0"/>
             <source>lelo</source>
             <comment>Text</comment>
-            <translation type="unfinished">lelo</translation>
+            <translation type="obsolete">lelo</translation>
+        </message>
+        <message>
+            <source>Rero</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Rero</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="FollowMe/behavior.xar" line="0"/>
+            <source>bye</source>
+            <comment>Text</comment>
+            <translation type="unfinished">bye</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Say (2)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="FollowMe/behavior.xar" line="0"/>
+            <source>Say stop to stop, valga la redundancia</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Say stop to stop, valga la redundancia</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Say (3)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>I lost you</source>
+            <comment>Text</comment>
+            <translation type="obsolete">I lost you</translation>
         </message>
     </context>
     <context>

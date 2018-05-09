@@ -1,14 +1,14 @@
-\select@language {spanish}
+\select@language {english}
 \contentsline {section}{1.\ INTRODUCTION}{1}{section*.2}
 \contentsline {section}{2.\ OBJECTIVES}{1}{section*.3}
 \contentsline {section}{3.\ PRELIMINARIES}{1}{section*.4}
 \contentsline {subsection}{3.1.\ CHOREOGRAPHE}{1}{section*.5}
-\contentsline {section}{4.\ SPEECH RECOGNITION}{1}{section*.6}
-\contentsline {subsection}{4.1.\ ANIMATIONS}{1}{section*.7}
-\contentsline {subsection}{4.2.\ MOVEMENT}{1}{section*.8}
-\contentsline {section}{5.\ FACE RECOGNITION}{1}{section*.9}
-\contentsline {section}{6.\ DIALOGUE}{1}{section*.10}
-\contentsline {section}{7.\ CONCLUSIONS}{1}{section*.11}
-\contentsline {section}{8. REFERENCES}{2}{section*.12}
-\contentsline {section}{ANNEXES}{3}{section*.13}
-\contentsline {subsection}{ANNEX I \ ENLACES DE CONTENIDO}{3}{section*.14}
+\contentsline {section}{4.\ SPEECH RECOGNITION}{4}{section*.6}
+\contentsline {subsection}{4.1.\ ANIMATIONS}{4}{section*.7}
+\contentsline {subsection}{4.2.\ MOVEMENT}{4}{section*.8}
+\contentsline {section}{5.\ FACE RECOGNITION}{4}{section*.9}
+\contentsline {section}{6.\ DIALOGUE}{4}{section*.10}
+\contentsline {section}{7.\ CONCLUSIONS}{4}{section*.11}
+\contentsline {section}{8. REFERENCES}{5}{section*.12}
+\contentsline {section}{ANNEXES}{6}{section*.13}
+\contentsline {subsection}{ANNEX I \ ENLACES DE CONTENIDO}{6}{section*.14}

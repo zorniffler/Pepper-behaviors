@@ -22,6 +22,14 @@
             <translation type="obsolete">Mesame tamae, vaga aruyi tachi yo</translation>
         </message>
         <message>
+            <source>Mesame tamae, vaga aruyi taki yo</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Mesame tamae, vaga aruyi taki yo</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Awaken/Awaken</name>
+        <message>
             <location filename="Faces/behavior.xar" line="0"/>
             <source>Mesame tamae, vaga aruyi taki yo</source>
             <comment>Text</comment>
@@ -29,7 +37,34 @@
         </message>
     </context>
     <context>
-        <name>Faces/behavior.xar:/Say</name>
+        <name>Faces/behavior.xar:/Face Forget/Error</name>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>You are unforgettable</source>
+            <comment>Text</comment>
+            <translation type="unfinished">You are unforgettable</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Face Forget/Forgotten</name>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>Forgiven, but not forgotten...</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Forgiven, but not forgotten...</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Face Forget/Say</name>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>What face do you want me to forget?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">What face do you want me to forget?</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Face Learner/Say</name>
         <message>
             <location filename="Faces/behavior.xar" line="0"/>
             <source>Hello, what is your name?</source>
@@ -38,12 +73,37 @@
         </message>
     </context>
     <context>
-        <name>Faces/behavior.xar:/Say (1)</name>
+        <name>Faces/behavior.xar:/Face Learner/Say (1)</name>
         <message>
             <location filename="Faces/behavior.xar" line="0"/>
+            <source>Nice to meet thou</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Nice to meet thou</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Face Learner/Say (2)</name>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>I can't frame thou fearful symmetry</source>
+            <comment>Text</comment>
+            <translation type="unfinished">I can't frame thou fearful symmetry</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Say</name>
+        <message>
+            <source>Hello, what is your name?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Hello, what is your name?</translation>
+        </message>
+    </context>
+    <context>
+        <name>Faces/behavior.xar:/Say (1)</name>
+        <message>
             <source>Nice to meet you</source>
             <comment>Text</comment>
-            <translation type="unfinished">Nice to meet you</translation>
+            <translation type="obsolete">Nice to meet you</translation>
         </message>
     </context>
     <context>
@@ -54,10 +114,9 @@
             <translation type="obsolete">You are so ugly</translation>
         </message>
         <message>
-            <location filename="Faces/behavior.xar" line="0"/>
             <source>You look like Quasimodo</source>
             <comment>Text</comment>
-            <translation type="unfinished">You look like Quasimodo</translation>
+            <translation type="obsolete">You look like Quasimodo</translation>
         </message>
     </context>
     <context>
@@ -72,6 +131,15 @@
             <source>Nani</source>
             <comment>Text</comment>
             <translation type="unfinished">Nani</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/Awaken/Awaken</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>Mesame tamae, vaga aruyi taki yo</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Mesame tamae, vaga aruyi taki yo</translation>
         </message>
     </context>
     <context>
@@ -104,10 +172,29 @@
     <context>
         <name>FollowCome/behavior.xar:/FollowActions/Say</name>
         <message>
-            <location filename="FollowCome/behavior.xar" line="0"/>
             <source>Say stop to stop, valga la redundancia</source>
             <comment>Text</comment>
-            <translation type="unfinished">Say stop to stop, valga la redundancia</translation>
+            <translation type="obsolete">Say stop to stop, valga la redundancia</translation>
+        </message>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>Say stop to... stop?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Say stop to... stop?</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/FollowActions/Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>I'm going to stop because I want to, not because you told me.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">I'm going to stop because I want to, not because you told me.</translation>
         </message>
     </context>
     <context>
@@ -239,21 +326,28 @@
         </message>
     </context>
     <context>
-        <name>SpeechCommands/behavior.xar:/Can't hear</name>
+        <name>SpeechCommands/behavior.xar:/Awaken/Awaken</name>
         <message>
             <location filename="SpeechCommands/behavior.xar" line="0"/>
+            <source>Mesame tamae, vaga aruyi taki yo</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Mesame tamae, vaga aruyi taki yo</translation>
+        </message>
+    </context>
+    <context>
+        <name>SpeechCommands/behavior.xar:/Can't hear</name>
+        <message>
             <source>I can't hear ye</source>
             <comment>Text</comment>
-            <translation type="unfinished">I can't hear ye</translation>
+            <translation type="obsolete">I can't hear ye</translation>
         </message>
     </context>
     <context>
         <name>SpeechCommands/behavior.xar:/Default</name>
         <message>
-            <location filename="SpeechCommands/behavior.xar" line="0"/>
             <source>Praise the Sun</source>
             <comment>Text</comment>
-            <translation type="unfinished">Praise the Sun</translation>
+            <translation type="obsolete">Praise the Sun</translation>
         </message>
     </context>
     <context>

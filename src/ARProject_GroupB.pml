@@ -3,14 +3,12 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="SpeechCommands" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="ComeHere" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="FollowMe" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="FollowCome" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="Faces" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
         <File name="move" src="SpeechCommands/move.pmt" />
-        <File name="choice_sentences" src="Faces/Aldebaran/choice_sentences.xml" />
     </Resources>
     <Topics />
     <IgnoredPaths />

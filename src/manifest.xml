@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" uuid="arproject_groupb-0e4919">
+<package uuid="arproject_groupb-0e4919" version="0.0.0">
  <names>
   <name lang="en_US">ARProject_GroupB</name>
  </names>
@@ -19,15 +19,11 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="ComeHere">
-   <nature>interactive</nature>
-   <permissions/>
-  </behaviorContent>
   <behaviorContent path="Faces">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
-  <behaviorContent path="FollowMe">
+  <behaviorContent path="FollowCome">
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>

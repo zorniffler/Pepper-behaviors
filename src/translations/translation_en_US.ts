@@ -4,10 +4,9 @@
     <context>
         <name>ComeHere/behavior.xar:/Say</name>
         <message>
-            <location filename="ComeHere/behavior.xar" line="0"/>
             <source>I've lost you</source>
             <comment>Text</comment>
-            <translation type="unfinished">I've lost you</translation>
+            <translation type="obsolete">I've lost you</translation>
         </message>
     </context>
     <context>
@@ -76,6 +75,93 @@
         </message>
     </context>
     <context>
+        <name>FollowCome/behavior.xar:/Come Here Actions/Say</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>Hot stuff, comin' through!</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Hot stuff, comin' through!</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/Come Here Actions/Say (1)</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>I lost you</source>
+            <comment>Text</comment>
+            <translation type="unfinished">I lost you</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/Come Here Actions/Say (2)</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>I'm here</source>
+            <comment>Text</comment>
+            <translation type="unfinished">I'm here</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/FollowActions/Say</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>Say stop to stop, valga la redundancia</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Say stop to stop, valga la redundancia</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowCome/behavior.xar:/Say (1)</name>
+        <message>
+            <location filename="FollowCome/behavior.xar" line="0"/>
+            <source>bye</source>
+            <comment>Text</comment>
+            <translation type="unfinished">bye</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Come Here Actions/Say</name>
+        <message>
+            <source>Hot stuff, comin' through!</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Hot stuff, comin' through!</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Come Here Actions/Say (1)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>I lost you</source>
+            <comment>Text</comment>
+            <translation type="obsolete">I lost you</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/Come Here Actions/Say (2)</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>I'm here</source>
+            <comment>Text</comment>
+            <translation type="obsolete">I'm here</translation>
+        </message>
+    </context>
+    <context>
+        <name>FollowMe/behavior.xar:/FollowActions/Say</name>
+        <message>
+            <source>Say stop to stop, valga la redundancia</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Say stop to stop, valga la redundancia</translation>
+        </message>
+    </context>
+    <context>
         <name>FollowMe/behavior.xar:/Say</name>
         <message>
             <source>i have lost you my love</source>
@@ -121,10 +207,9 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="FollowMe/behavior.xar" line="0"/>
             <source>bye</source>
             <comment>Text</comment>
-            <translation type="unfinished">bye</translation>
+            <translation type="obsolete">bye</translation>
         </message>
     </context>
     <context>
@@ -135,10 +220,9 @@
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="FollowMe/behavior.xar" line="0"/>
             <source>Say stop to stop, valga la redundancia</source>
             <comment>Text</comment>
-            <translation type="unfinished">Say stop to stop, valga la redundancia</translation>
+            <translation type="obsolete">Say stop to stop, valga la redundancia</translation>
         </message>
     </context>
     <context>

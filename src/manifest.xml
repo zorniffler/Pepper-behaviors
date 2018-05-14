@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="arproject_groupb-0e4919" version="0.0.0">
+<package version="0.0.0" uuid="arproject_groupb-0e4919">
  <names>
   <name lang="en_US">ARProject_GroupB</name>
  </names>
@@ -17,6 +17,9 @@
   <behaviorContent path="SpeechCommands">
    <userRequestable/>
    <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="Faces">
@@ -27,6 +30,13 @@
    <nature>interactive</nature>
    <permissions/>
   </behaviorContent>
+  <behaviorContent path="Dialogue">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="Dialogue_Sun" typeVersion="1.0">
+   <topic language="en_US" path="Dialogue_Sun/Dialogue_Sun_enu.top"/>
+  </dialogContent>
  </contents>
  <requirements>
   <robotRequirement model="JULIETTE"/>

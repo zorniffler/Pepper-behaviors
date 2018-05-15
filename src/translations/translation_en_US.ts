@@ -19,6 +19,54 @@
         </message>
     </context>
     <context>
+        <name>Dialogue/behavior.xar:/Dialog/ChangeImage/Animated Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/Dialog/ChangeImage/Say</name>
+        <message>
+            <location filename="Dialogue/behavior.xar" line="0"/>
+            <source>The best place is the main corridor. The glass roof let's you to know where is the Sun located, so you can praise it while bathing in sunlight.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">The best place is the main corridor. The glass roof let's you to know where is the Sun located, so you can praise it while bathing in sunlight.</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/Dialog/PraiseTheSun (1)/Say</name>
+        <message>
+            <location filename="Dialogue/behavior.xar" line="0"/>
+            <source>Praise the sun</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Praise the sun</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/Dialog/PraiseTheSun/Say</name>
+        <message>
+            <location filename="Dialogue/behavior.xar" line="0"/>
+            <source>Praise the sun</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Praise the sun</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/Dialog/Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <source>The best place is the main corridor. The glass roof let's you to know where is the Sun located, so you can praise it while bathing in sunlight.</source>
+            <comment>Text</comment>
+            <translation type="obsolete">The best place is the main corridor. The glass roof let's you to know where is the Sun located, so you can praise it while bathing in sunlight.</translation>
+        </message>
+    </context>
+    <context>
         <name>Dialogue/behavior.xar:/Face Learner/Say</name>
         <message>
             <location filename="Dialogue/behavior.xar" line="0"/>
@@ -55,6 +103,15 @@
         </message>
     </context>
     <context>
+        <name>Dialogue/behavior.xar:/Greet Known/PraiseTheSun/Say</name>
+        <message>
+            <location filename="Dialogue/behavior.xar" line="0"/>
+            <source>Praise the sun</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Praise the sun</translation>
+        </message>
+    </context>
+    <context>
         <name>Dialogue/behavior.xar:/Greet unknown/Say</name>
         <message>
             <source>Hello</source>
@@ -66,6 +123,22 @@
             <source>Have you ever thought about praising the Sun?</source>
             <comment>Text</comment>
             <translation type="unfinished">Have you ever thought about praising the Sun?</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/PraiseTheSun (1)/Say</name>
+        <message>
+            <source>Praise the sun</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Praise the sun</translation>
+        </message>
+    </context>
+    <context>
+        <name>Dialogue/behavior.xar:/PraiseTheSun/Say</name>
+        <message>
+            <source>Praise the sun</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Praise the sun</translation>
         </message>
     </context>
     <context>

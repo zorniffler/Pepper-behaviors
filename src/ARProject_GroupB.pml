@@ -12,6 +12,8 @@
     </Dialogs>
     <Resources>
         <File name="move" src="SpeechCommands/move.pmt" />
+        <File name="SunImage" src="html/SunImage.png" />
+        <File name="plano2500" src="html/plano2500.png" />
     </Resources>
     <Topics>
         <Topic name="Dialogue_Sun_enu" src="Dialogue_Sun/Dialogue_Sun_enu.top" topicName="Dialogue_Sun" language="en_US" />

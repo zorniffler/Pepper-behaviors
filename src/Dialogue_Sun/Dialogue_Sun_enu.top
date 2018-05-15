@@ -13,17 +13,17 @@ concept:(farewell) [farewell bye "good bye" "see you"]
 
 u:([help "what can you do"]) I can talk you about: what is the Sun?, how to praise it? why should we praise it? and where can we praise it?
 
-u:("what is") The Sun is a wondrous body, like a magnificent father. If only I could be so grossly incandescent.
+u:("what is {sun}") The Sun is a wondrous body, like a magnificent father. If only I could be so grossly incandescent.
 
-u:(how) To praise the sun you have to close your legs, open your arms pointing them diagonally with your hands pointing to the sky and look in the same direction. I'll demonstrate you how to do it. $praiseDemo=1
+u:("how {praise}") To praise the sun you have to close your legs, open your arms pointing them diagonally with your hands pointing to the sky and look in the same direction. I'll demonstrate you how to do it. $praiseDemo=1
 
-u:(why) The Sun gives us light, warmth and the most important thing of life: hope. I was once a lost soul, until I found my faith. Now I pray and fight in the name of the Sun, as well as Gwyn and Gwynevere.
+u:("why {praise}") The Sun gives us light, warmth and the most important thing of life: hope. I was once a lost soul, until I found my faith. Now I pray and fight in the name of the Sun, as well as Gwyn and Gwynevere.
 
-u:(gwyn) Gwyn is the Lord of Sunlight. He saved us from the dark age by linking the first flame. You should be grateful.
+u:("{"who is"} gwyn") Gwyn is the Lord of Sunlight. He saved us from the dark age by linking the first flame. You should be grateful.
 
-u:(gwynevere) Gwynevere is the Princess of Sunlight, daughter of Gwyn and sister of Gwyndolin. She watches over us since its father absence.
+u:("{"who is"} gwynevere") Gwynevere is the Princess of Sunlight, daughter of Gwyn and sister of Gwyndolin. She watches over us since its father absence.
 
-u:(gwyndolin) Dark Sun Gwyndolin is the... son? of Gwyn. He has powers related to the Moon, so he is not important.
+u:("{"who is"} gwyndolin") Dark Sun Gwyndolin is the... son? of Gwyn. He has powers related to the Moon, so he is not important.
 
 u:(where) While inside the E.S.I.I. you can praise the Sun in jolly cooperation. $whereToPraise=1
 

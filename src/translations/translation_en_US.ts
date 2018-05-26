@@ -229,10 +229,15 @@
     <context>
         <name>Faces/behavior.xar:/Face Learner/Say (1)</name>
         <message>
-            <location filename="Faces/behavior.xar" line="0"/>
             <source>Nice to meet thou</source>
             <comment>Text</comment>
-            <translation type="unfinished">Nice to meet thou</translation>
+            <translation type="obsolete">Nice to meet thou</translation>
+        </message>
+        <message>
+            <location filename="Faces/behavior.xar" line="0"/>
+            <source>Nice to meet you</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Nice to meet you</translation>
         </message>
     </context>
     <context>

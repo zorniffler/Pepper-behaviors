@@ -17,6 +17,7 @@
 \usepackage{float}
 \usepackage{csquotes}
 \usepackage{eurosym}
+\usepackage{listings}
 \restylefloat{table}
 %\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=, pdfsubject=, pdfkeywords=}
 \usepackage[pdftex]{graphicx}
@@ -577,6 +578,110 @@ The other box, which diagram is the one appearing in \ref{FaceForget1}, is calle
 The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its wordlist will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block.
 Finally, the robot will tell the user whether it was able to forget the face or not.
 \section{6.\ DIALOGUE}
+The last behaviour is a dialogue in which the robot interacts with a user talking and with animations. Its diagram is the one that appears in \ref{Dialogue1}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{dialogue1.png}
+	\caption{Dialogue behaviour diagram.}
+	\label{Dialogue1}
+\end{figure}
+The Awaken box is different from its counterpart in the other behaviours, as can be seen in \ref{Awaken2}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{awaken2.png}
+	\caption{Awaken box diagram in Dialogue behaviour.}
+	\label{Awaken2}
+\end{figure}
+An image depicting the Sun will appear in the screen after the robot wakes up and says its wake up message. The image is the one shown in \ref{IlSole}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{SunImage.png}
+	\caption{Sun image shown by the robot.}
+	\label{IlSole}
+\end{figure}
+In order to reduce the amount of time it takes to load the image, its preloaded after the robot wakes up and displayed after the message is said.
+After the Awaken box, a new box is executed: the ``Face Learner'' box. It's very similar to the one in \ref{FaceLearner1}, but in this case we take advantage of the fact that you can relearn a face multiple times to speed up the recognition phase.
+As can be seen in \ref{FaceLearner2}, the main difference between this FaceLearner box and the other is that each time Pepper recognizes a face, it will relearn it.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{facelearner2.png}
+	\caption{FaceLearner box diagram in Dialogue behaviour.}
+	\label{FaceLearner2}
+\end{figure}
+Using the face learning we let the robot to start a conversation by greeting someone known to Pepper or by asking someone's name.
+The other difference between this box and the previous one is that this one has a different output if Pepper detected a new face or not.
+If the face is new, the ``Greet Known'' box will be executed. Otherwise the ``Greet unknown'' box will be executed.
+The diagram of Greet unknown box is the one appearing in \ref{GreetUnknown1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{greetunknown1.png}
+	\caption{Greet unknown box diagram.}
+	\label{GreetUnknown1}
+\end{figure}
+First the robot will ask the user whether he/she has ever thought about praising the Sun.
+If the answer is ``No'', the robot will ask the player to talk about the Sun and the Dialog box will start.
+If the answer is ``Yes'', the Greet Known box will be executed.
+The diagram of Greet Known box is the one appearing in \ref{GreetKnown1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{greetknown1.png}
+	\caption{Greet Known box diagram.}
+	\label{GreetKnown1}
+\end{figure}
+The robot will follow the user with its head with a Face Tracker box and will ask the player to praise the Sun together.
+After that the ``PraiseTheSun'' box will be executed.
+That box follows the diagram shown in \ref{PraiseTheSun1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{praisethesun1.png}
+	\caption{PraiseTheSun box diagram.}
+	\label{PraiseTheSun1}
+\end{figure}
+First the robot will say ``Praise the Sun'', and then an animation of the robot praising the sun will start, leaving the robot in the same position as in the figure \ref{Praise1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{praise1.png}
+	\caption{Praise the Sun animation.}
+	\label{Praise1}
+\end{figure}
+When the PraiseTheSun box ends, the Greet Known will end too.
+After that, the same boxes that will be executed if you answer ``No'' in the Greet unknown box will be executed, leading also to the Dialog box.
+The Dialog box has a complex behaviour as can be seen in the figure \ref{DialogBox1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{dialogbox1.png}
+	\caption{Dialog box diagram.}
+	\label{DialogBox1}
+\end{figure}
+First the ``FaceAndDialog'' box is executed. Its diagram is \ref{FaceAndDialog1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{faceanddialog1.png}
+	\caption{FaceAndDialog box diagram.}
+	\label{FaceAndDialog1}
+\end{figure}
+It executes the next dialog:
+\lstinputlisting{../src/Dialogue_Sun/Dialogue_Sun_enu.top}
+In this dialog, the robot can talk about what is the Sun, how to praise it, why to praise it, where to praise it, who is Gwyn, Gwynevere and Gwyndolin, and finally you can ask Pepper what can she do/help and you can say goodbye to her.
+While talking, there is a Face Tracker block that follows the user's head, to add more realism.
+There are three special dialog options.
+The farewell option will send a signal through the onStopped output of the FaceAndDialog option. It will start a PraiseTheSun box and the Dialog box will be stopped.
+The ``how to praise'' option will send a signal through the ``Praise'' output, and will start a PraiseTheSun box. After its behaviour is completed, the FaceAndDialog will be restarted.
+The ``where to praise'' option will send a signal through the ``Where'' output, starting the ``ChangeImage'' box. After its behaviour is completed, the FaceAndDialog will be restarted.
+The ChangeImage box, with the diagram that appears in \ref{ChangeImage1}, changes the image displayed in the tablet to the map of the ESIIAB shown in \ref{ESIIABMap} while saying the best place to praise the Sun inside of the ESIIAB.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{changeimage1.png}
+	\caption{ChangeImage box diagram.}
+	\label{ChangeImage1}
+\end{figure}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{plano2500.png}
+	\caption{ESIIAB map shown by the robot.}
+	\label{ESIIABMap}
+\end{figure}
+After the farewell option was used and the robot has said goodbye, the Dialog box ends and the FaceLearner box will be run again.
 \section{7.\ CONCLUSIONS}
 
 \clearpage

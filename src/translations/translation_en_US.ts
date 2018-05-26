@@ -308,10 +308,9 @@
     <context>
         <name>FollowCome/behavior.xar:/Come Here Actions/Say (1)</name>
         <message>
-            <location filename="FollowCome/behavior.xar" line="0"/>
             <source>I lost you</source>
             <comment>Text</comment>
-            <translation type="unfinished">I lost you</translation>
+            <translation type="obsolete">I lost you</translation>
         </message>
     </context>
     <context>

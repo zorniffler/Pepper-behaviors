@@ -362,7 +362,7 @@ Also, we are going to continue giving information about other parts of the main 
 	\label{leftbar1}
 \end{figure}
 		
-In this part the reader can see two diferences zones, the first one, at the top it provides information about project files, in the plus mark, you can create new behaviors, dialogs, planar moves, directories, or import files from other selected directories. \newline
+In this part the reader can see two different zones: the first one, at the top it provides information about project files, in the plus mark, you can create new behaviors, dialogs, planar moves, directories, or import files from other selected directories. \newline
 
 The last one provides the user box libraries which will help the user to program the robot behaviors. It have 7 categories called:
 
@@ -404,12 +404,178 @@ At the top the reader can see timelines blocks, it contains block that will show
 At the bottom the reader can see the log viewer for see error details, he can use the dialog text for writting messages to the robot, it provides to the user that he do not need to talk if he want to test for example a speech recognition block.
 
 \subsection{3.2.\ HOW TO CONNECT TO PEPPER}
-In this section we are going to teache
-
+In order to start working Choregraphe we need to connect with Pepper.
+First we need to be connected to the same network as the robot, in our case the network is called ``legoland''.
+Once we are connected to the network, we can connect Choregraphe with Pepper. That can be done either by pressing Connection -> Connect to..., by pressing the green button in \ref{Topbar3} depicting an antenna with waves or by pressing Ctrl + Shift + C.
+Now we need to know the IP address that Pepper is using. We can know that by touching the button behind the tablet the robot is holding. We just need to write the IP address and the port the robot says in the Choregraphe screen shown in \ref{Connect1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{connectto.png}
+	\caption{Connect to... screen in Choregraphe.}
+	\label{Connect1}		
+\end{figure}
+After that we only need to press the ``Select'' button and we will be connected to the robot.
+To disconnect we can use either Connection -> Disconnect, the red button in \ref{Topbar3} or Ctrl + Shift + D.
 \section{4.\ SPEECH RECOGNITION}
+One of the most interesting things in Choregraphe is the ``Speech Recognition'' block in \ref{Speech1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{speechreco1.png}
+	\caption{Speech Recognition block.}
+	\label{Speech1}
+\end{figure}
+They allow us to interact with the robot with our voice.
+Inputs:
+\begin{itemize}
+	\item onStart: type ``Bang'', which means it will not treat the information received, it is just a signal that starts the box behaviour. It is the one marked with the play symbol.
+	\item onStop: type ``Bang''. Stops the box behaviour. Marked with a red cross.
+\end{itemize}
+
+Outputs:
+\begin{itemize}
+	\item onStopped: type ``Bang''. Sends a signal after the box behaviour has stopped. Marked with a vertical red line with a black play symbol on its right side.
+	\item wordRecognized: type ``String''. Sends the word the robot has recognized.
+	\item onNothing: type ``Bang''. Sends a signal if Pepper has not heard anything during a certain timelapse.
+\end{itemize}
+
+The most important parameters are:
+\begin{itemize}
+	\item Word list: list of strings separated by semicolons the robot will try to recognize when that box behaviour is on.
+	\item Confidence threshold: when the robot hears something, it assigns a confidence value to the word it has recognized. If that value does not reach the value set in this parameter, the word will not be recognized.
+\end{itemize}
 \subsection{4.1.\ ANIMATIONS}
+There are a few animations already defined, as you can see in \ref{Animations1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{animations1.png}
+	\caption{Some predefined animation blocks.}
+	\label{Animations1}
+\end{figure}
+In our example, we decided to use ``Gorilla'' and ``Football'' animations.
+Inputs:
+\begin{itemize}
+	\item onStart: type ``Bang''. Starts the box behaviour.
+	\item onStop: type ``Bang''. Stops the box behaviour.
+\end{itemize}
+
+Outputs:
+\begin{itemize}
+	\item onStopped: type ``Bang''. Sends a signal after the box behaviour has stopped.
+\end{itemize}
+We have created a behaviour called ``SpeechCommands'' that has to perform an animation when it is said so, which diagram is the one being shown in \ref{SpeechCommands1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{speechcommands1.png}
+	\caption{SpeechCommands behaviour diagram.}
+	\label{SpeechCommands1}
+\end{figure}
+Firts we need to ``Wake Up'' the robot, otherwise it will not be able to perform anything.
+We created a block composed by more blocks in order to do that, called ``Awaken'' block.
+Inputs:
+\begin{itemize}
+	\item onStart: type ``Bang''.
+\end{itemize}
+
+Outputs:
+\begin{itemize}
+	\item onSuccess: type ``Bang''. Sends a signal if the robot woke up correctly.
+	\item onFailure: type ``Bang''. Sends a signal if the robot failed to wake up.
+\end{itemize}
+As we can see in \ref{Awaken1}, the block is composed by a ``Stand up'' box, some ``Set Language'' boxes and a ``Say'' box.
+The ``Stand up'' box wakes up the robot, starts the motors and puts Pepper to its default position.
+If the robot woke up correctly then it will say a message. Else it will send a signal through its onFailure output.
+After that, we have the ``FaceAndSpeech'' block, which diagram is shown in \ref{FaceSpeech1}.
+Inputs:
+\begin{itemize}
+	\item onStart: type ``Bang''.
+	\item onStop: type ``Bang''.
+\end{itemize}
+
+Outputs:
+\begin{itemize}
+	\item onStopped: type ``Bang''.
+	\item An type ``Bang'' output for each function the robot has to be able to perform. That is to say, if we want it to say ``Goodbye'' after the user says ``Bye'', ``See you'' or any other farewell, there will only be an output for all the farewells the robot can hear.
+	\item End: type ``Bang''. When the robot is told to stop, this output will send a signal.
+\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{faceandspeech1.png}
+	\caption{FaceAndSpeech box diagram.}
+	\label{FaceSpeech1}
+\end{figure}
+This block has a Face Tracking box, a Speech Recognition box and a Switch box. The Speech Recognition box sends any word it recognizes to the Switch box that sends a signal to the correct output and stops both the tracking and the speech recognition.
+Sice we wanted to make the robot more realistic, we added a Face Tracking box to make it follow the face of the person talking to it.
+The Speech Recognition box has in its wordlist the words ``Football'' and ``Gorilla''. The Switch box has only three cases, one for each word in the wordlist and another one for the ``end'' word. If someone writes ``end'' in Pepper's console, this case will be triggered.
+After the FaceAndSpeech box we have the animations and the message the robot says when it is told to stop.
 \subsection{4.2.\ MOVEMENT}
+We created the ``FollowCome'' behaviour, that implements both the ``Follow me'' and ``Come here'' voice commands. The diagram, that is very similar to that in \ref{SpeechCommands1}, can be seen in \ref{FollowCome1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{followcome1.png}
+	\caption{FollowCome behaviour diagram.}
+	\label{FollowCome1}
+\end{figure}
+The only changes are inside FaceAndSpeech block and the animations have been replaced by new boxes.
+FaceAndSpeech box had its wordlist and cases changed to use the new voice commands: ``Follow me'' and ``Come here''.
+Instead of animations, we now have two new blocks: ``FollowActions'' and ``Come Here Actions''.
+They both have the same inputs and outputs, none other than onStart, onStop and onStopped.
+The FollowActions box, which diagram is shown in \ref{FollowActions1}, starts with the robot saying what the user has to do in order to stop the robot.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{followme1.png}
+	\caption{FollowActions box diagram.}
+	\label{FollowActions1}
+\end{figure}
+Then, it starts simmultaneously a Face Tracker box and a Speech Recognition box with two words in its wordlist: ``stop'' and ``blergh''.
+Only having one word in its wordlist will make the robot try to hear only that word, making a lot of false positives.
+After that box, a Switch box will stop everything when the robot hears ``stop'', and will do nothing otherwise.
+The Face Tracker box will make the robot move to the position of the face it is tracking.
+When the robot is stopped, it says a phrase to let the user have some feedback.
+
+The ``Come Here Actions'' box is more simple, as can be seen in \ref{ComeActions1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{comehere1.png}
+	\caption{Come Here Actions box diagram.}
+	\label{ComeActions1}
+\end{figure}
+It starts and end with say blocks, to let the user have some feedback.
+In the middle of those blocks, there is a face tracking box that moves the robot to the position of the user and stops when it reaches its target.
+
+One important thing to take in account when using Choregraphe is that all the tracking and speech recognition blocks of the same type in the same diagram will be activated simmultaneously.
+That is to say: if you put two different Speech Recognition boxes in the same diagram, when you start one of them the other will start too, and if you stop one of them the other will also be stopped.
+The same happens to Face Tracking blocks. That's why we created complex boxes with smaller behaviours that only need one tracking box of each type as much. It helps us organize our work as well as fixing that problem.
 \section{5.\ FACE RECOGNITION}
+Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing proccess.
+We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{faces1.png}
+	\caption{Faces behaviour diagram.}
+	\label{Faces1}
+\end{figure}
+Again, the diagram is very similar to those of the previous behaviours.
+We had to change the wordlist and cases in FaceAndSpeech box, as well as the blocks that execute after it outputs something.
+We have two new blocks, both with onStart and onStop inputs and the onStopped output that restarts the FaceAndSpeech box like in the previous behaviours.
+When the user greets the robot, the ``Face Learner'' box is executed, that has the diagram shown in \ref{FaceLearner1}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{facelearner1.png}
+	\caption{Face Learner box diagram.}
+	\label{FaceLearner1}
+\end{figure}
+It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.
+Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name.
+If it succeded in its task, the robot will say ``Nice to meet you''. Otherwise, the robot will answer with a quote of a poem written by William Blake.
+The other box, which diagram is the one appearing in \ref{FaceForget1}, is called ``Face Forget'' and lets us make the robot forget a certain face.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{faceforget1.png}
+	\caption{Face Forget box diagram.}
+	\label{FaceForget1}
+\end{figure}
+The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its wordlist will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block.
+Finally, the robot will tell the user whether it was able to forget the face or not.
 \section{6.\ DIALOGUE}
 \section{7.\ CONCLUSIONS}
 

@@ -407,16 +407,21 @@ At the bottom the reader can see the log viewer for see error details, he can us
 \subsection{3.2.\ HOW TO CONNECT TO PEPPER}
 In order to start working Choregraphe we need to connect with Pepper.
 First we need to be connected to the same network as the robot, in our case the network is called ``legoland''.
-Once we are connected to the network, we can connect Choregraphe with Pepper. That can be done either by pressing Connection -> Connect to..., by pressing the green button in \ref{Topbar3} depicting an antenna with waves or by pressing Ctrl + Shift + C.
+Once we are connected to the network, we can connect Choregraphe with Pepper. That can be done either by pressing Connection -> Connect to..., by pressing the green button in \ref{Topbar3} depicting an antenna with waves or by pressing Ctrl + Shift + C. \newline
+
 Now we need to know the IP address that Pepper is using. We can know that by touching the button behind the tablet the robot is holding. We just need to write the IP address and the port the robot says in the Choregraphe screen shown in \ref{Connect1}.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{connectto.png}
 	\caption{Connect to... screen in Choregraphe.}
 	\label{Connect1}		
 \end{figure}
-After that we only need to press the ``Select'' button and we will be connected to the robot.
+After that we only need to press the ``Select'' button and we will be connected to the robot. \newline 
+
 To disconnect we can use either Connection -> Disconnect, the red button in \ref{Topbar3} or Ctrl + Shift + D.
+
+
 \section{4.\ SPEECH RECOGNITION}
 One of the most interesting things in Choregraphe is the ``Speech Recognition'' block in \ref{Speech1}.
 \begin{figure}[ht]
@@ -425,7 +430,9 @@ One of the most interesting things in Choregraphe is the ``Speech Recognition'' 
 	\caption{Speech Recognition block.}
 	\label{Speech1}
 \end{figure}
-They allow us to interact with the robot with our voice.
+
+They allow us to interact with the robot with our voice. \newline
+
 Inputs:
 \begin{itemize}
 	\item onStart: type ``Bang'', which means it will not treat the information received, it is just a signal that starts the box behaviour. It is the one marked with the play symbol.
@@ -444,34 +451,43 @@ The most important parameters are:
 	\item Word list: list of strings separated by semicolons the robot will try to recognize when that box behaviour is on.
 	\item Confidence threshold: when the robot hears something, it assigns a confidence value to the word it has recognized. If that value does not reach the value set in this parameter, the word will not be recognized.
 \end{itemize}
+
 \subsection{4.1.\ ANIMATIONS}
 There are a few animations already defined, as you can see in \ref{Animations1}.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{animations1.png}
 	\caption{Some predefined animation blocks.}
 	\label{Animations1}
 \end{figure}
-In our example, we decided to use ``Gorilla'' and ``Football'' animations.
+
+In our example, we decided to use ``Gorilla'' and ``Football'' animations. \newline
+
 Inputs:
 \begin{itemize}
 	\item onStart: type ``Bang''. Starts the box behaviour.
 	\item onStop: type ``Bang''. Stops the box behaviour.
 \end{itemize}
 
-Outputs:
+Outputs: \newpage
 \begin{itemize}
 	\item onStopped: type ``Bang''. Sends a signal after the box behaviour has stopped.
 \end{itemize}
-We have created a behaviour called ``SpeechCommands'' that has to perform an animation when it is said so, which diagram is the one being shown in \ref{SpeechCommands1}.
-\begin{figure}[ht]
+
+We have created a behaviour called ``SpeechCommands'' that has to perform an animation when it is said so, which diagram is the one being shown in \ref{SpeechCommands1} .
+
+\begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.5]{speechcommands1.png}
 	\caption{SpeechCommands behaviour diagram.}
 	\label{SpeechCommands1}
 \end{figure}
-Firts we need to ``Wake Up'' the robot, otherwise it will not be able to perform anything.
-We created a block composed by more blocks in order to do that, called ``Awaken'' block.
+
+Firts we need to ``Wake Up'' the robot, otherwise it will not be able to perform anything. \newline
+
+We created a block composed by more blocks in order to do that, called ``Awaken'' block. \newline 
+
 Inputs:
 \begin{itemize}
 	\item onStart: type ``Bang''.
@@ -482,10 +498,17 @@ Outputs:
 	\item onSuccess: type ``Bang''. Sends a signal if the robot woke up correctly.
 	\item onFailure: type ``Bang''. Sends a signal if the robot failed to wake up.
 \end{itemize}
+
+%%
+%% No existe esta ref
+%%
+
 As we can see in \ref{Awaken1}, the block is composed by a ``Stand up'' box, some ``Set Language'' boxes and a ``Say'' box.
-The ``Stand up'' box wakes up the robot, starts the motors and puts Pepper to its default position.
-If the robot woke up correctly then it will say a message. Else it will send a signal through its onFailure output.
-After that, we have the ``FaceAndSpeech'' block, which diagram is shown in \ref{FaceSpeech1}.
+The ``Stand up'' box wakes up the robot, starts the motors and puts Pepper to its default position. \newline
+
+If the robot woke up correctly then it will say a message. Else it will send a signal through its onFailure output. \newline
+
+After that, we have the ``FaceAndSpeech'' block, which diagram is shown in \ref{FaceSpeech1} .
 Inputs:
 \begin{itemize}
 	\item onStart: type ``Bang''.
@@ -496,31 +519,43 @@ Outputs:
 \begin{itemize}
 	\item onStopped: type ``Bang''.
 	\item An type ``Bang'' output for each function the robot has to be able to perform. That is to say, if we want it to say ``Goodbye'' after the user says ``Bye'', ``See you'' or any other farewell, there will only be an output for all the farewells the robot can hear.
+	\newpage
 	\item End: type ``Bang''. When the robot is told to stop, this output will send a signal.
 \end{itemize}
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{faceandspeech1.png}
 	\caption{FaceAndSpeech box diagram.}
 	\label{FaceSpeech1}
 \end{figure}
-This block has a Face Tracking box, a Speech Recognition box and a Switch box. The Speech Recognition box sends any word it recognizes to the Switch box that sends a signal to the correct output and stops both the tracking and the speech recognition.
-Sice we wanted to make the robot more realistic, we added a Face Tracking box to make it follow the face of the person talking to it.
-The Speech Recognition box has in its wordlist the words ``Football'' and ``Gorilla''. The Switch box has only three cases, one for each word in the wordlist and another one for the ``end'' word. If someone writes ``end'' in Pepper's console, this case will be triggered.
+This block has a Face Tracking box, a Speech Recognition box and a Switch box. The Speech Recognition box sends any word it recognizes to the Switch box that sends a signal to the correct output and stops both the tracking and the speech recognition. \newline
+
+Since we wanted to make the robot more realistic, we added a Face Tracking box to make it follow the face of the person talking to it. \newline
+
+The Speech Recognition box has in its wordlist the words ``Football'' and ``Gorilla''. The Switch box has only three cases, one for each word in the wordlist and another one for the ``end'' word. If someone writes ``end'' in Pepper's console, this case will be triggered. \newline
+
 After the FaceAndSpeech box we have the animations and the message the robot says when it is told to stop.
+
 \subsection{4.2.\ MOVEMENT}
-We created the ``FollowCome'' behaviour, that implements both the ``Follow me'' and ``Come here'' voice commands. The diagram, that is very similar to that in \ref{SpeechCommands1}, can be seen in \ref{FollowCome1}.
+
+We created the ``FollowCome'' behaviour, that implements both the ``Follow me'' and ``Come here'' voice commands. The diagram, that is very similar to that in \ref{SpeechCommands1} , can be seen in \ref{FollowCome1} .
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{followcome1.png}
 	\caption{FollowCome behaviour diagram.}
 	\label{FollowCome1}
 \end{figure}
-The only changes are inside FaceAndSpeech block and the animations have been replaced by new boxes.
-FaceAndSpeech box had its wordlist and cases changed to use the new voice commands: ``Follow me'' and ``Come here''.
-Instead of animations, we now have two new blocks: ``FollowActions'' and ``Come Here Actions''.
-They both have the same inputs and outputs, none other than onStart, onStop and onStopped.
+\newpage
+The only changes are inside FaceAndSpeech block and the animations have been replaced by new boxes. \newline
+
+FaceAndSpeech box had its wordlist and cases changed to use the new voice commands: ``Follow me'' and ``Come here''. \newline
+Instead of animations, we now have two new blocks: ``FollowActions'' and ``Come Here Actions''. \newline
+
+They both have the same inputs and outputs, none other than onStart, onStop and onStopped. \newline
+
 The FollowActions box, which diagram is shown in \ref{FollowActions1}, starts with the robot saying what the user has to do in order to stop the robot.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{followme1.png}
@@ -528,108 +563,158 @@ The FollowActions box, which diagram is shown in \ref{FollowActions1}, starts wi
 	\label{FollowActions1}
 \end{figure}
 Then, it starts simmultaneously a Face Tracker box and a Speech Recognition box with two words in its wordlist: ``stop'' and ``blergh''.
-Only having one word in its wordlist will make the robot try to hear only that word, making a lot of false positives.
-After that box, a Switch box will stop everything when the robot hears ``stop'', and will do nothing otherwise.
-The Face Tracker box will make the robot move to the position of the face it is tracking.
-When the robot is stopped, it says a phrase to let the user have some feedback.
+Only having one word in its wordlist will make the robot try to hear only that word, making a lot of false positives. \newline 
 
-The ``Come Here Actions'' box is more simple, as can be seen in \ref{ComeActions1}.
-\begin{figure}[ht]
+After that box, a Switch box will stop everything when the robot hears ``stop'', and will do nothing otherwise. \newline
+
+The Face Tracker box will make the robot move to the position of the face it is tracking. \newline 
+
+When the robot is stopped, it says a phrase to let the user have some feedback. \newline
+
+The ``Come Here Actions'' box is more simple, as can be seen in \ref{ComeActions1}. \newline
+
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{comehere1.png}
 	\caption{Come Here Actions box diagram.}
 	\label{ComeActions1}
 \end{figure}
-It starts and end with say blocks, to let the user have some feedback.
-In the middle of those blocks, there is a face tracking box that moves the robot to the position of the user and stops when it reaches its target.
 
-One important thing to take in account when using Choregraphe is that all the tracking and speech recognition blocks of the same type in the same diagram will be activated simmultaneously.
-That is to say: if you put two different Speech Recognition boxes in the same diagram, when you start one of them the other will start too, and if you stop one of them the other will also be stopped.
+It starts and end with say blocks, to let the user have some feedback. \newline
+
+In the middle of those blocks, there is a face tracking box that moves the robot to the position of the user and stops when it reaches its target.\newline 
+
+One important thing to take in account when using Choregraphe is that all the tracking and speech recognition blocks of the same type in the same diagram will be activated simmultaneously. \newline
+
+That is to say: if you put two different Speech Recognition boxes in the same diagram, when you start one of them the other will start too, and if you stop one of them the other will also be stopped.\newline
+
 The same happens to Face Tracking blocks. That's why we created complex boxes with smaller behaviours that only need one tracking box of each type as much. It helps us organize our work as well as fixing that problem.
+
 \section{5.\ FACE RECOGNITION}
-Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing proccess.
-We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name.
-\begin{figure}[ht]
+Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing proccess. \newline
+
+We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name. \newpage 
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{faces1.png}
 	\caption{Faces behaviour diagram.}
 	\label{Faces1}
 \end{figure}
-Again, the diagram is very similar to those of the previous behaviours.
-We had to change the wordlist and cases in FaceAndSpeech box, as well as the blocks that execute after it outputs something.
-We have two new blocks, both with onStart and onStop inputs and the onStopped output that restarts the FaceAndSpeech box like in the previous behaviours.
-When the user greets the robot, the ``Face Learner'' box is executed, that has the diagram shown in \ref{FaceLearner1}.
-\begin{figure}[ht]
+
+Again, the diagram is very similar to those of the previous behaviours.\newline
+
+We had to change the wordlist and cases in FaceAndSpeech box, as well as the blocks that execute after it outputs something. \newline
+
+We have two new blocks, both with onStart and onStop inputs and the onStopped output that restarts the FaceAndSpeech box like in the previous behaviours.\newline
+
+When the user greets the robot, the ``Face Learner'' box is executed, that has the diagram shown in \ref{FaceLearner1} . 
+
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{facelearner1.png}
 	\caption{Face Learner box diagram.}
 	\label{FaceLearner1}
 \end{figure}
-It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.
-Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name.
-If it succeded in its task, the robot will say ``Nice to meet you''. Otherwise, the robot will answer with a quote of a poem written by William Blake.
+
+\newpage
+
+It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.\newline
+
+Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name. \newline
+
+If it succeded in its task, the robot will say ``Nice to meet you''. Otherwise, the robot will answer with a quote of a poem written by William Blake.\newline 
+
 The other box, which diagram is the one appearing in \ref{FaceForget1}, is called ``Face Forget'' and lets us make the robot forget a certain face.
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{faceforget1.png}
 	\caption{Face Forget box diagram.}
 	\label{FaceForget1}
 \end{figure}
-The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its wordlist will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block.
+
+The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its wordlist will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block. \newline
+
 Finally, the robot will tell the user whether it was able to forget the face or not.
+
+\newpage
 \section{6.\ DIALOGUE}
-The last behaviour is a dialogue in which the robot interacts with a user talking and with animations. Its diagram is the one that appears in \ref{Dialogue1}
-\begin{figure}[ht]
+
+The last behaviour is a dialogue in which the robot interacts with a user talking and with animations. Its diagram is the one that appears in \ref{Dialogue1} .
+
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{dialogue1.png}
 	\caption{Dialogue behaviour diagram.}
 	\label{Dialogue1}
 \end{figure}
-The Awaken box is different from its counterpart in the other behaviours, as can be seen in \ref{Awaken2}.
+
+The Awaken box is different from its counterpart in the other behaviours, as can be seen in \ref{Awaken2} .
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{awaken2.png}
 	\caption{Awaken box diagram in Dialogue behaviour.}
 	\label{Awaken2}
 \end{figure}
-An image depicting the Sun will appear in the screen after the robot wakes up and says its wake up message. The image is the one shown in \ref{IlSole}.
+
+An image depicting the Sun will appear in the screen after the robot wakes up and says its wake up message. \newpage
+
+The image is the one shown in \ref{IlSole} .
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{SunImage.png}
+	\includegraphics[scale=0.2]{SunImage.png}
 	\caption{Sun image shown by the robot.}
 	\label{IlSole}
 \end{figure}
-In order to reduce the amount of time it takes to load the image, its preloaded after the robot wakes up and displayed after the message is said.
-After the Awaken box, a new box is executed: the ``Face Learner'' box. It's very similar to the one in \ref{FaceLearner1}, but in this case we take advantage of the fact that you can relearn a face multiple times to speed up the recognition phase.
+
+In order to reduce the amount of time it takes to load the image, its preloaded after the robot wakes up and displayed after the message is said. \newline
+
+After the Awaken box, a new box is executed: the ``Face Learner'' box. It's very similar to the one in \ref{FaceLearner1}, but in this case we take advantage of the fact that you can relearn a face multiple times to speed up the recognition phase.\newline
+
 As can be seen in \ref{FaceLearner2}, the main difference between this FaceLearner box and the other is that each time Pepper recognizes a face, it will relearn it.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{facelearner2.png}
 	\caption{FaceLearner box diagram in Dialogue behaviour.}
 	\label{FaceLearner2}
 \end{figure}
-Using the face learning we let the robot to start a conversation by greeting someone known to Pepper or by asking someone's name.
-The other difference between this box and the previous one is that this one has a different output if Pepper detected a new face or not.
-If the face is new, the ``Greet Known'' box will be executed. Otherwise the ``Greet unknown'' box will be executed.
-The diagram of Greet unknown box is the one appearing in \ref{GreetUnknown1}.
+
+Using the face learning we let the robot to start a conversation by greeting someone known to Pepper or by asking someone's name. \newline
+
+The other difference between this box and the previous one is that this one has a different output if Pepper detected a new face or not. \newline
+
+If the face is new, the ``Greet Known'' box will be executed. Otherwise the ``Greet unknown'' box will be executed. \newline
+
+
+The diagram of Greet unknown box is the one appearing in\ref{GreetUnknown1}.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{greetunknown1.png}
 	\caption{Greet unknown box diagram.}
 	\label{GreetUnknown1}
 \end{figure}
-First the robot will ask the user whether he/she has ever thought about praising the Sun.
-If the answer is ``No'', the robot will ask the player to talk about the Sun and the Dialog box will start.
+
+First the robot will ask the user whether he/she has ever thought about praising the Sun. \newline
+
+If the answer is ``No'', the robot will ask the player to talk about the Sun and the Dialog box will start.\newline
+
 If the answer is ``Yes'', the Greet Known box will be executed.
 The diagram of Greet Known box is the one appearing in \ref{GreetKnown1}.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{greetknown1.png}
 	\caption{Greet Known box diagram.}
 	\label{GreetKnown1}
 \end{figure}
-The robot will follow the user with its head with a Face Tracker box and will ask the player to praise the Sun together.
-After that the ``PraiseTheSun'' box will be executed.
+
+The robot will follow the user with its head with a Face Tracker box and will ask the player to praise the Sun together. \newline
+
+After that the ``PraiseTheSun'' box will be executed. \newline
+
 That box follows the diagram shown in \ref{PraiseTheSun1}.
 \begin{figure}[ht]
 	\centering
@@ -637,15 +722,19 @@ That box follows the diagram shown in \ref{PraiseTheSun1}.
 	\caption{PraiseTheSun box diagram.}
 	\label{PraiseTheSun1}
 \end{figure}
-First the robot will say ``Praise the Sun'', and then an animation of the robot praising the sun will start, leaving the robot in the same position as in the figure \ref{Praise1}.
+
+First the robot will say ``Praise the Sun'', and then an animation of the robot praising the sun will start, leaving the robot in the same position as in the figure \ref{Praise1} .
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{praise1.png}
 	\caption{Praise the Sun animation.}
 	\label{Praise1}
 \end{figure}
-When the PraiseTheSun box ends, the Greet Known will end too.
-After that, the same boxes that will be executed if you answer ``No'' in the Greet unknown box will be executed, leading also to the Dialog box.
+When the PraiseTheSun box ends, the Greet Known will end too. \newline
+
+After that, the same boxes that will be executed if you answer ``No'' in the Greet unknown box will be executed, leading also to the Dialog box.\newline 
+
 The Dialog box has a complex behaviour as can be seen in the figure \ref{DialogBox1}.
 \begin{figure}[ht]
 	\centering
@@ -653,23 +742,36 @@ The Dialog box has a complex behaviour as can be seen in the figure \ref{DialogB
 	\caption{Dialog box diagram.}
 	\label{DialogBox1}
 \end{figure}
-First the ``FaceAndDialog'' box is executed. Its diagram is \ref{FaceAndDialog1}.
+\newpage
+First the ``FaceAndDialog'' box is executed. Its diagram is \ref{FaceAndDialog1} .
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{faceanddialog1.png}
+	\includegraphics[scale=0.5]{faceanddialog.png}
 	\caption{FaceAndDialog box diagram.}
 	\label{FaceAndDialog1}
 \end{figure}
+
 It executes the next dialog:
-\lstinputlisting{../src/Dialogue_Sun/Dialogue_Sun_enu.top}
-In this dialog, the robot can talk about what is the Sun, how to praise it, why to praise it, where to praise it, who is Gwyn, Gwynevere and Gwyndolin, and finally you can ask Pepper what can she do/help and you can say goodbye to her.
-While talking, there is a Face Tracker block that follows the user's head, to add more realism.
-There are three special dialog options.
-The farewell option will send a signal through the onStopped output of the FaceAndDialog option. It will start a PraiseTheSun box and the Dialog box will be stopped.
-The ``how to praise'' option will send a signal through the ``Praise'' output, and will start a PraiseTheSun box. After its behaviour is completed, the FaceAndDialog will be restarted.
-The ``where to praise'' option will send a signal through the ``Where'' output, starting the ``ChangeImage'' box. After its behaviour is completed, the FaceAndDialog will be restarted.
+
+\begin{lstlisting}
+../src/Dialogue_Sun/Dialogue_Sun_enu.top
+\end{lstlisting}
+In this dialog, the robot can talk about what is the Sun, how to praise it, why to praise it, where to praise it, who is Gwyn, Gwynevere and Gwyndolin, and finally you can ask Pepper what can she do/help and you can say goodbye to her.\newline
+
+While talking, there is a Face Tracker block that follows the user's head, to add more realism. \newline
+
+There are three special dialog options. \newline
+
+The farewell option will send a signal through the onStopped output of the FaceAndDialog option. It will start a PraiseTheSun box and the Dialog box will be stopped. \newline
+
+The ``how to praise'' option will send a signal through the ``Praise'' output, and will start a PraiseTheSun box. After its behaviour is completed, the FaceAndDialog will be restarted. \newline
+
+The ``where to praise'' option will send a signal through the ``Where'' output, starting the ``ChangeImage'' box. After its behaviour is completed, the FaceAndDialog will be restarted. \newline
+
 The ChangeImage box, with the diagram that appears in \ref{ChangeImage1}, changes the image displayed in the tablet to the map of the ESIIAB shown in \ref{ESIIABMap} while saying the best place to praise the Sun inside of the ESIIAB.
-\begin{figure}[ht]
+
+\begin{figure}[!h]
 	\centering
 	\includegraphics[scale=0.5]{changeimage1.png}
 	\caption{ChangeImage box diagram.}
@@ -677,11 +779,13 @@ The ChangeImage box, with the diagram that appears in \ref{ChangeImage1}, change
 \end{figure}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{plano2500.png}
+	\includegraphics[scale=0.2]{plano2500.png}
 	\caption{ESIIAB map shown by the robot.}
 	\label{ESIIABMap}
 \end{figure}
+
 After the farewell option was used and the robot has said goodbye, the Dialog box ends and the FaceLearner box will be run again.
+\newpage
 \section{7.\ CONCLUSIONS}
 
 \clearpage

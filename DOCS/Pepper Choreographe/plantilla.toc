@@ -5,11 +5,11 @@
 \contentsline {subsection}{3.1.\ CHOREOGRAPHE}{2}{section*.5}
 \contentsline {subsection}{3.2.\ HOW TO CONNECT TO PEPPER}{7}{section*.6}
 \contentsline {section}{4.\ SPEECH RECOGNITION}{7}{section*.7}
-\contentsline {subsection}{4.1.\ ANIMATIONS}{7}{section*.8}
-\contentsline {subsection}{4.2.\ MOVEMENT}{7}{section*.9}
-\contentsline {section}{5.\ FACE RECOGNITION}{7}{section*.10}
-\contentsline {section}{6.\ DIALOGUE}{7}{section*.11}
-\contentsline {section}{7.\ CONCLUSIONS}{7}{section*.12}
-\contentsline {section}{8. REFERENCES}{8}{section*.13}
-\contentsline {section}{ANNEXES}{9}{section*.14}
-\contentsline {subsection}{ANNEX I \ ENLACES DE CONTENIDO}{9}{section*.15}
+\contentsline {subsection}{4.1.\ ANIMATIONS}{8}{section*.8}
+\contentsline {subsection}{4.2.\ MOVEMENT}{10}{section*.9}
+\contentsline {section}{5.\ FACE RECOGNITION}{12}{section*.10}
+\contentsline {section}{6.\ DIALOGUE}{15}{section*.11}
+\contentsline {section}{7.\ CONCLUSIONS}{21}{section*.12}
+\contentsline {section}{8. REFERENCES}{23}{section*.13}
+\contentsline {section}{ANNEXES}{24}{section*.14}
+\contentsline {subsection}{ANNEX I \ ENLACES DE CONTENIDO}{24}{section*.15}

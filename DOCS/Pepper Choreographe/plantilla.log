@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.5)  28 MAY 2018 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.2.5)  29 MAY 2018 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,7 +861,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--421
 File: speechreco1.png Graphic file (type png)
  <use speechreco1.png>
 Package pdftex.def Info: speechreco1.png used on input line 429.
-(pdftex.def)             Requested size: 61.35406pt x 55.33157pt.
+(pdftex.def)             Requested size: 73.62563pt x 66.39856pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
@@ -872,17 +872,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.438 	\item o
-              nStart: type ``Bang'', which means it will not treat the infor...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
-as been already used, duplicate ignored
+l.436 I
+       nputs:pdfTeX warning (ext4): destination with the same identifier (name{
+figure.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.438 	\item o
-              nStart: type ``Bang'', which means it will not treat the infor...
- <./connectto.png> <./speechreco1.png>]
-<animations1.png, id=175, 156.585pt x 395.97937pt>
+l.436 I
+       nputs: <./connectto.png> <./speechreco1.png>]
+<animations1.png, id=177, 156.585pt x 395.97937pt>
 File: animations1.png Graphic file (type png)
  <use animations1.png>
 Package pdftex.def Info: animations1.png used on input line 460.
@@ -899,7 +897,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--466
                                                   \fi \fi 
 l.473 Outputs: \newpage
                         <./animations1.png>]
-<speechcommands1.png, id=183, 907.13907pt x 389.20406pt>
+<speechcommands1.png, id=185, 907.13907pt x 389.20406pt>
 File: speechcommands1.png Graphic file (type png)
 
 <use speechcommands1.png>
@@ -915,104 +913,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-
-LaTeX Warning: Reference `Awaken1' on page 9 undefined on input line 506.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
-
- []
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.14})
- has been already used, duplicate ignored
+<awaken1.png, id=187, 908.64468pt x 322.20375pt>
+File: awaken1.png Graphic file (type png)
+ <use awaken1.png>
+Package pdftex.def Info: awaken1.png used on input line 506.
+(pdftex.def)             Requested size: 454.32123pt x 161.10147pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.522 	\newpage
-                <./speechcommands1.png>]
-<faceandspeech1.png, id=193, 910.15031pt x 361.35pt>
+l.510 \newpage
+               <./speechcommands1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+<faceandspeech1.png, id=197, 910.15031pt x 361.35pt>
 File: faceandspeech1.png Graphic file (type png)
  <use faceandspeech1.png>
-Package pdftex.def Info: faceandspeech1.png used on input line 528.
+Package pdftex.def Info: faceandspeech1.png used on input line 532.
 (pdftex.def)             Requested size: 455.07405pt x 180.67456pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
  []
-
-<followcome1.png, id=196, 906.38625pt x 402.00188pt>
-File: followcome1.png Graphic file (type png)
- <use followcome1.png>
-Package pdftex.def Info: followcome1.png used on input line 545.
-(pdftex.def)             Requested size: 453.19202pt x 201.00044pt.
 
 [10pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.549 \newpage
-               <./faceandspeech1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+l.537 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.537 
+       <./awaken1.png> <./faceandspeech1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
+<followcome1.png, id=207, 906.38625pt x 402.00188pt>
+File: followcome1.png Graphic file (type png)
+ <use followcome1.png>
+Package pdftex.def Info: followcome1.png used on input line 549.
+(pdftex.def)             Requested size: 453.19202pt x 201.00044pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
-
- []
-
-<followme1.png, id=204, 906.38625pt x 352.31625pt>
-File: followme1.png Graphic file (type png)
- <use followme1.png>
-Package pdftex.def Info: followme1.png used on input line 561.
-(pdftex.def)             Requested size: 453.19202pt x 176.15768pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 565--567
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-
- []
-
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.16}
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.570 T
-       he Face Tracker box will make the robot move to the position of the f...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
-as been already used, duplicate ignored
+l.553 \newpage
+               <./followcome1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.570 T
-       he Face Tracker box will make the robot move to the position of the f...
- <./followcome1.png> <./followme1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+<followme1.png, id=215, 906.38625pt x 352.31625pt>
+File: followme1.png Graphic file (type png)
+ <use followme1.png>
+Package pdftex.def Info: followme1.png used on input line 565.
+(pdftex.def)             Requested size: 453.19202pt x 176.15768pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 
  []
 
@@ -1026,21 +1013,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 574--575
 
  []
 
-<comehere1.png, id=213, 911.65594pt x 277.035pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+<comehere1.png, id=217, 911.65594pt x 277.035pt>
 File: comehere1.png Graphic file (type png)
  <use comehere1.png>
-Package pdftex.def Info: comehere1.png used on input line 578.
+Package pdftex.def Info: comehere1.png used on input line 582.
 (pdftex.def)             Requested size: 455.82686pt x 138.51715pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 587--588
 
@@ -1052,7 +1039,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 589--590
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
  []
 
@@ -1061,68 +1053,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 594--595
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.596 ...eet that person by his/her name. \newpage
-                                                   <./comehere1.png>]
-<faces1.png, id=222, 911.65594pt x 377.91188pt>
+l.595 T
+       he same happens to Face Tracking blocks. That's why we created comple...
+ <./followme1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
+
+ []
+
+<faces1.png, id=226, 911.65594pt x 377.91188pt>
 File: faces1.png Graphic file (type png)
  <use faces1.png>
-Package pdftex.def Info: faces1.png used on input line 599.
+Package pdftex.def Info: faces1.png used on input line 604.
 (pdftex.def)             Requested size: 455.82686pt x 188.95547pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--605
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
-
-<facelearner1.png, id=224, 910.15031pt x 371.13657pt>
-File: facelearner1.png Graphic file (type png)
- <use facelearner1.png>
-Package pdftex.def Info: facelearner1.png used on input line 614.
-(pdftex.def)             Requested size: 455.07405pt x 185.56783pt.
 
 [13pdfTeX warning (ext4): destination with the same identifier (name{figure.19}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.619 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{figure.20}) has been already used, duplicate ignored
+l.614 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.619 \newpage
-               <./faces1.png> <./facelearner1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
+l.614 
+       <./comehere1.png> <./faces1.png>]
+<facelearner1.png, id=235, 910.15031pt x 371.13657pt>
+File: facelearner1.png Graphic file (type png)
+ <use facelearner1.png>
+Package pdftex.def Info: facelearner1.png used on input line 619.
+(pdftex.def)             Requested size: 455.07405pt x 185.56783pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
 
  []
 
-<faceforget1.png, id=233, 909.3975pt x 315.42844pt>
+<faceforget1.png, id=237, 909.3975pt x 315.42844pt>
 File: faceforget1.png Graphic file (type png)
  <use faceforget1.png>
-Package pdftex.def Info: faceforget1.png used on input line 630.
+Package pdftex.def Info: faceforget1.png used on input line 633.
 (pdftex.def)             Requested size: 454.69765pt x 157.71382pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
@@ -1131,58 +1128,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 635--636
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.639 \newpage
-               <./faceforget1.png>]
-<dialogue1.png, id=241, 904.88063pt x 420.82219pt>
+l.639 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.639 
+       <./facelearner1.png> <./faceforget1.png>]
+<dialogue1.png, id=247, 904.88063pt x 420.82219pt>
 File: dialogue1.png Graphic file (type png)
  <use dialogue1.png>
-Package pdftex.def Info: dialogue1.png used on input line 646.
+Package pdftex.def Info: dialogue1.png used on input line 648.
 (pdftex.def)             Requested size: 452.43921pt x 210.41057pt.
 
-<awaken2.png, id=243, 907.13907pt x 423.08063pt>
+<awaken2.png, id=249, 907.13907pt x 423.08063pt>
 File: awaken2.png Graphic file (type png)
  <use awaken2.png>
-Package pdftex.def Info: awaken2.png used on input line 655.
+Package pdftex.def Info: awaken2.png used on input line 657.
 (pdftex.def)             Requested size: 453.56842pt x 211.5398pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.22
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.23
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.660 ...up and says its wake up message. \newpage
+l.662 ...up and says its wake up message. \newpage
                                                   pdfTeX warning (ext4): destin
-ation with the same identifier (name{figure.23}) has been already used, duplica
+ation with the same identifier (name{figure.24}) has been already used, duplica
 te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.660 ...up and says its wake up message. \newpage
+l.662 ...up and says its wake up message. \newpage
                                                    <./dialogue1.png> <./awaken2
-.png>] <SunImage.png, id=254, 1204.5pt x 803.0pt>
+.png>] <SunImage.png, id=260, 1204.5pt x 803.0pt>
 File: SunImage.png Graphic file (type png)
  <use SunImage.png>
-Package pdftex.def Info: SunImage.png used on input line 666.
+Package pdftex.def Info: SunImage.png used on input line 668.
 (pdftex.def)             Requested size: 240.89574pt x 160.59715pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--672
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 673--674
 
  []
 
-<facelearner2.png, id=257, 903.375pt x 389.95688pt>
-File: facelearner2.png Graphic file (type png)
- <use facelearner2.png>
-Package pdftex.def Info: facelearner2.png used on input line 679.
-(pdftex.def)             Requested size: 451.6864pt x 194.97795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
 
  []
 
+<facelearner2.png, id=263, 903.375pt x 389.95688pt>
+File: facelearner2.png Graphic file (type png)
+ <use facelearner2.png>
+Package pdftex.def Info: facelearner2.png used on input line 681.
+(pdftex.def)             Requested size: 451.6864pt x 194.97795pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 686--687
 
@@ -1193,114 +1191,114 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
  []
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.24}
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.25}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.689 
+l.691 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-25}) has been already used, duplicate ignored
+26}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.689 
+l.691 
        <./SunImage.png> <./facelearner2.png>]
-<greetunknown1.png, id=267, 908.64468pt x 414.79968pt>
+<greetunknown1.png, id=273, 908.64468pt x 414.79968pt>
 File: greetunknown1.png Graphic file (type png)
  <use greetunknown1.png>
-Package pdftex.def Info: greetunknown1.png used on input line 695.
+Package pdftex.def Info: greetunknown1.png used on input line 697.
 (pdftex.def)             Requested size: 454.32123pt x 207.39934pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
-<greetknown1.png, id=269, 910.15031pt x 367.3725pt>
-File: greetknown1.png Graphic file (type png)
- <use greetknown1.png>
-Package pdftex.def Info: greetknown1.png used on input line 709.
-(pdftex.def)             Requested size: 455.07405pt x 183.68579pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
+<greetknown1.png, id=275, 910.15031pt x 367.3725pt>
+File: greetknown1.png Graphic file (type png)
+ <use greetknown1.png>
+Package pdftex.def Info: greetknown1.png used on input line 711.
+(pdftex.def)             Requested size: 455.07405pt x 183.68579pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.26}
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
+
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.27}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.718 T
+l.720 T
        hat box follows the diagram shown in \ref{PraiseTheSun1}.pdfTeX warning 
-(ext4): destination with the same identifier (name{figure.27}) has been already
+(ext4): destination with the same identifier (name{figure.28}) has been already
  used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.718 T
+l.720 T
        hat box follows the diagram shown in \ref{PraiseTheSun1}. <./greetunknow
 n1.png> <./greetknown1.png>]
-<praisethesun1.png, id=279, 907.13907pt x 316.18124pt>
+<praisethesun1.png, id=285, 907.13907pt x 316.18124pt>
 File: praisethesun1.png Graphic file (type png)
  <use praisethesun1.png>
-Package pdftex.def Info: praisethesun1.png used on input line 721.
+Package pdftex.def Info: praisethesun1.png used on input line 723.
 (pdftex.def)             Requested size: 453.56842pt x 158.09023pt.
 
-<praise1.png, id=281, 351.56343pt x 242.40562pt>
+<praise1.png, id=287, 351.56343pt x 242.40562pt>
 File: praise1.png Graphic file (type png)
  <use praise1.png>
-Package pdftex.def Info: praise1.png used on input line 730.
+Package pdftex.def Info: praise1.png used on input line 732.
 (pdftex.def)             Requested size: 175.78128pt x 121.2025pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
  []
 
-<dialogbox1.png, id=283, 907.89188pt x 352.31625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--739
+
+ []
+
+<dialogbox1.png, id=289, 907.89188pt x 352.31625pt>
 File: dialogbox1.png Graphic file (type png)
  <use dialogbox1.png>
-Package pdftex.def Info: dialogbox1.png used on input line 741.
+Package pdftex.def Info: dialogbox1.png used on input line 743.
 (pdftex.def)             Requested size: 453.94482pt x 176.15768pt.
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.28}
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.29}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.745 \newpage
+l.747 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
-{figure.29}) has been already used, duplicate ignored
+{figure.30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.745 \newpage
+l.747 \newpage
                <./praisethesun1.png> <./praise1.png>]
-<faceanddialog.png, id=294, 906.38625pt x 350.81062pt>
+<faceanddialog.png, id=300, 906.38625pt x 350.81062pt>
 File: faceanddialog.png Graphic file (type png)
  <use faceanddialog.png>
-Package pdftex.def Info: faceanddialog.png used on input line 750.
+Package pdftex.def Info: faceanddialog.png used on input line 752.
 (pdftex.def)             Requested size: 453.19202pt x 175.40488pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 760--761
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 762--763
 
@@ -1321,101 +1319,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 768--769
 
  []
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.30}
-) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.770 T
-       he ``where to praise'' option will send a signal through the ``Where'...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.770 T
-       he ``where to praise'' option will send a signal through the ``Where'...
- <./dialogbox1.png> <./faceanddialog.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 770--771
 
  []
 
-<changeimage1.png, id=306, 904.1278pt x 329.73187pt>
-File: changeimage1.png Graphic file (type png)
- <use changeimage1.png>
-Package pdftex.def Info: changeimage1.png used on input line 776.
-(pdftex.def)             Requested size: 452.06279pt x 164.86552pt.
-
-<plano2500.png, id=307, 2509.375pt x 2266.4675pt>
-File: plano2500.png Graphic file (type png)
- <use plano2500.png>
-Package pdftex.def Info: plano2500.png used on input line 782.
-(pdftex.def)             Requested size: 501.86612pt x 453.28548pt.
-
-Overfull \hbox (18.14063pt too wide) in paragraph at lines 782--783
- [][] 
- []
-
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.32}
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.31}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.788 \newpage
-               <./changeimage1.png>] [21] [22pdfTeX warning (ext4): destination
- with the same identifier (name{figure.33}) has been already used, duplicate ig
-nored
+l.772 T
+       he ``where to praise'' option will send a signal through the ``Where'...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.791 \clearpage
-                 <./plano2500.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 802.
+l.772 T
+       he ``where to praise'' option will send a signal through the ``Where'...
+ <./dialogbox1.png> <./faceanddialog.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
+
+ []
+
+<changeimage1.png, id=312, 904.1278pt x 329.73187pt>
+File: changeimage1.png Graphic file (type png)
+ <use changeimage1.png>
+Package pdftex.def Info: changeimage1.png used on input line 778.
+(pdftex.def)             Requested size: 452.06279pt x 164.86552pt.
+
+<plano2500.png, id=313, 2509.375pt x 2266.4675pt>
+File: plano2500.png Graphic file (type png)
+ <use plano2500.png>
+Package pdftex.def Info: plano2500.png used on input line 784.
+(pdftex.def)             Requested size: 225.834pt x 203.97327pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.33
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.789 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.34}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.789 \newpage
+               <./changeimage1.png> <./plano2500.png>] [21]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 804.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 5970) in paragraph at lines 812--813
+Underfull \hbox (badness 5970) in paragraph at lines 814--815
 []\T1/cmr/m/n/10 IBM Bluemix, www.ibm.com. Con-sul-tado el 14 de Abril del 2018
 . []$\T1/cmtt/m/n/10 https : / / www . ibm . com /
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 818--819
+Underfull \hbox (badness 1603) in paragraph at lines 820--821
 []\T1/cmr/m/n/10 Node-RED, www.nodered.org. Con-sul-tado el 16 de Abril del 201
 8. []$\T1/cmtt/m/n/10 https : / / nodered . org / docs /
  []
 
-[23
+[22
 
 ]
-Overfull \hbox (4.66174pt too wide) in paragraph at lines 846--848
+Overfull \hbox (4.66174pt too wide) in paragraph at lines 848--850
 []$\T1/cmtt/m/n/10 https : / / git . eu-[]gb . bluemix . net / HernanIndibil . 
 LaCruz / Hackaton-[]Skyhold-[]Web / tree / master / DOCS$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 865.
-[24
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 867.
+[23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 865.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 867.
  (./plantilla.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 865.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 865.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 867.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 867.
 Package rerunfilecheck Info: File `plantilla.out' has not changed.
 (rerunfilecheck)             Checksum: 6DC8A2BA992708DA5842A6A98C4A4E0F;801.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 865.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 867.
  ) 
 Here is how much of TeX's memory you used:
- 10683 strings out of 494850
- 148766 string characters out of 6178025
- 251481 words of memory out of 5000000
- 13696 multiletter control sequences out of 15000+600000
+ 10688 strings out of 494850
+ 148842 string characters out of 6178025
+ 251524 words of memory out of 5000000
+ 13700 multiletter control sequences out of 15000+600000
  11295 words of font info for 31 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  41i,8n,43p,934b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1426,11 +1423,13 @@ er/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/zorniffler/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/zorniffler/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/zorniffler/.texmf-var/font
 s/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/zorniffler/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1200.600pk>
-Output written on plantilla.pdf (28 pages, 2195947 bytes).
+jfour/jknappen/ec/ecbx1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on plantilla.pdf (27 pages, 2273155 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
+ 727 PDF objects out of 1000 (max. 8388607)
+ 335 compressed objects within 4 object streams
  91 named destinations out of 1000 (max. 500000)
- 298 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 

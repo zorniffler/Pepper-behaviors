@@ -419,14 +419,14 @@ Now we need to know the IP address that Pepper is using. We can know that by tou
 \end{figure}
 After that we only need to press the ``Select'' button and we will be connected to the robot. \newline 
 
-To disconnect we can use either Connection -> Disconnect, the red button in \ref{Topbar3} or Ctrl + Shift + D.
+To disconnect we can use either $Connection \rightarrow Disconnect$, the red button in \ref{Topbar3} or Ctrl + Shift + D.
 
 
 \section{4.\ SPEECH RECOGNITION}
 One of the most interesting things in Choregraphe is the ``Speech Recognition'' block in \ref{Speech1}.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{speechreco1.png}
+	\includegraphics[scale=0.6]{speechreco1.png}
 	\caption{Speech Recognition block.}
 	\label{Speech1}
 \end{figure}
@@ -499,11 +499,16 @@ Outputs:
 	\item onFailure: type ``Bang''. Sends a signal if the robot failed to wake up.
 \end{itemize}
 
-%%
-%% No existe esta ref
-%%
-
 As we can see in \ref{Awaken1}, the block is composed by a ``Stand up'' box, some ``Set Language'' boxes and a ``Say'' box.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{awaken1.png}
+	\caption{Awaken box diagram.}
+	\label{Awaken1}		
+\end{figure}
+\newpage
+
 The ``Stand up'' box wakes up the robot, starts the motors and puts Pepper to its default position. \newline
 
 If the robot woke up correctly then it will say a message. Else it will send a signal through its onFailure output. \newline
@@ -519,7 +524,6 @@ Outputs:
 \begin{itemize}
 	\item onStopped: type ``Bang''.
 	\item An type ``Bang'' output for each function the robot has to be able to perform. That is to say, if we want it to say ``Goodbye'' after the user says ``Bye'', ``See you'' or any other farewell, there will only be an output for all the farewells the robot can hear.
-	\newpage
 	\item End: type ``Bang''. When the robot is told to stop, this output will send a signal.
 \end{itemize}
 
@@ -593,7 +597,8 @@ The same happens to Face Tracking blocks. That's why we created complex boxes wi
 \section{5.\ FACE RECOGNITION}
 Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing proccess. \newline
 
-We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name. \newpage 
+We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name. 
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{faces1.png}
@@ -616,8 +621,6 @@ When the user greets the robot, the ``Face Learner'' box is executed, that has t
 	\label{FaceLearner1}
 \end{figure}
 
-\newpage
-
 It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.\newline
 
 Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name. \newline
@@ -636,7 +639,6 @@ The robot will ask for the name of the face the user wants it to forget. Again, 
 
 Finally, the robot will tell the user whether it was able to forget the face or not.
 
-\newpage
 \section{6.\ DIALOGUE}
 
 The last behaviour is a dialogue in which the robot interacts with a user talking and with animations. Its diagram is the one that appears in \ref{Dialogue1} .
@@ -779,13 +781,13 @@ The ChangeImage box, with the diagram that appears in \ref{ChangeImage1}, change
 \end{figure}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.2]{plano2500.png}
+	\includegraphics[scale=0.09]{plano2500.png}
 	\caption{ESIIAB map shown by the robot.}
 	\label{ESIIABMap}
 \end{figure}
 
-After the farewell option was used and the robot has said goodbye, the Dialog box ends and the FaceLearner box will be run again.
 \newpage
+After the farewell option was used and the robot has said goodbye, the Dialog box ends and the FaceLearner box will be run again.
 \section{7.\ CONCLUSIONS}
 
 \clearpage

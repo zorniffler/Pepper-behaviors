@@ -226,7 +226,7 @@ HUMAN-ROBOT INTERACTION (HRI) WITH ROBOT PEPPER
 %que mejore la comprensi\'on del mismo).
 %\end{itemize}
 
-Actually with the evolution of technology and advances in recognition and speech algorithms, the capacibility of the robots increment so fast, that it is the reason why a lot of companies are working on robot development, robots will provide humans a lot of tools that they could make their life more easier.\newline
+Nowadays with the evolution of technology and advances in recognition and speech algorithms, the capacibility of the robots increment so fast, that it is the reason why a lot of companies are working on robot development, robots will provide humans a lot of tools that they could make their life more easier.\newline
 
 With the advance accomplished in the HRI(human robot interaction), we can provide to the robots habilities that help them to interact with humans and exchange information between them. \newline
 
@@ -253,6 +253,25 @@ In this project we are going to try to development our personal behaviours for P
 
 \newpage
 \section{2.\ OBJECTIVES}
+This project is focused on human-robot interaction using Robot Pepper. \newline
+We have to do a study of the proposal, Choregraphe, as well as developing four different behaviours:
+\begin{itemize}
+
+ \item Speech-based commands to activate animations. \newline 
+ There are some predefined animations we will have to associate with commands. \newline
+ We will work with speech recognition in Choregraphe.
+ 
+ \item "Come here" and "Follow me" behaviours. \newline
+	The first one has to make the robot go to your position. \newline
+	The last one has to make the robot follow you until you ask Pepper to stop. \newline
+	To create both will require us to make use of the different tracking systems implemented in Choregraphe.
+	
+ \item A face learning and recognition behaviour. \newline
+	We will study how to use face learning and recognition in Choregraphe.
+ \item  A speech-based dialogue. \newline 
+	We will have to make use of the "Dialog" boxes, as well as to learn the syntax used when writing a dialogue in Choregraphe.
+\end{itemize}
+
 \section{3.\ PRELIMINARIES}
 \subsection{3.1.\ CHOREOGRAPHE}
 We have to provide to the reader the enough knowledge about the development environment called choregraphe. We use it in this project to perform the human-robot interaction with Robot Pepper. One of the benefits of using this enviroment it is that the user do not need a lot of knowledge about programming in code. The reason is simple, it provides a toolbox diagram enviroment where the user can move and connect boxes that are defined to simulate the robot behavior. \newline
@@ -272,7 +291,7 @@ The installation package includes:
 
 Well, to start with we are going to explain all the information about the Choregraphe 2.5.5 development tool, and we will teach all the steps that we follow for make the project tasks. \newline
 
-First of all, we open the Choregraphe 2.5.5 development tool and we can see the interface that we provide in the image  \ref{Choregrapheinterface} \newpage
+First of all, we open the Choregraphe 2.5.5 development tool and we can see the interface that we provide in the image  \ref{Choregrapheinterface} .
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.3]{1choregraphe.png}
@@ -289,6 +308,7 @@ At the Getting started window we can see diferent options:
 
 In addition the interface contains a top bar, one left bar and one right bar. \newline
 
+\newpage
 The top bar \ref{Topbar} contains the options for:
 
 \begin{figure}[ht]
@@ -329,7 +349,7 @@ The top bar \ref{Topbar} contains the options for:
 		\end{figure}
 		
 		\item The third rectangle \ref{Topbar3} provides the posibility of connect and disconnect to a robot or a simulate robot.
-		\begin{figure}[ht]
+		\begin{figure}[!ht]
 			\centering
 			\includegraphics[scale=0.5]{2topbar3.png}
 			\caption{Image of the top bar third rectangle.}
@@ -338,7 +358,7 @@ The top bar \ref{Topbar} contains the options for:
 		\item The fourth rectangle \ref{Topbar4} provides options for upload to the robot and play, stop, debugs and errors output, the state {running, not running}, volume options and animation mode.
 		\begin{figure}[!ht]
 			\centering
-			\includegraphics[scale=0.3]{2topbar4.png}
+			\includegraphics[scale=0.5]{2topbar4.png}
 			\caption{Image of the top bar fourth rectangle.}
 			\label{Topbar4}		
 		\end{figure}
@@ -353,15 +373,16 @@ The top bar \ref{Topbar} contains the options for:
 	\end{itemize}	
 \end{itemize}
 
-%% left bar
-Also, we are going to continue giving information about other parts of the main menu interface, at the left side we can see this menu blocks \ref{leftbar1}.
 \newpage
-\begin{figure}[!t]
+Also, we are going to continue giving information about other parts of the main menu interface, at the left side we can see this menu blocks \ref{leftbar1} .
+
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.9]{1leftbar.png}
 	\caption{Image of the left bar.}
 	\label{leftbar1}
 \end{figure}
+		
 		
 In this part the reader can see two different zones: the first one, at the top it provides information about project files, in the plus mark, you can create new behaviors, dialogs, planar moves, directories, or import files from other selected directories. \newline
 
@@ -379,7 +400,7 @@ The last one provides the user box libraries which will help the user to program
 
 We will explain better in future sections giving relevant information about the utility of these categories and the different types of boxes that they provide.\newline
 
-On the other side, the right bar \ref{rightbar1}, it provides a video image of the robot where the user can see what is doing the robot doing, objects that are in front of him, and the currently distance of them. It is a place where you can test the robot behavior and the user can validate and test the designed behaviors. \newpage
+On the other side, the right bar \ref{rightbar1} , it provides a video image of the robot where the user can see what is doing the robot doing, objects that are in front of him, and the currently distance of them. It is a place where you can test the robot behavior and the user can validate and test the designed behaviors. \newpage
 
 %% right bar
 \begin{figure}[!t]
@@ -391,7 +412,7 @@ On the other side, the right bar \ref{rightbar1}, it provides a video image of t
 
 At the bottom, the user can see packages that are installed into the robot and options for install new ones or delete one of them.\newline
 
-Finally,in the middle \ref{middledesignpart}, we have the space for the block designing.
+Finally,in the middle \ref{middledesignpart} , we have the space for the block designing.
 
 \begin{figure}[!ht]
 	\centering
@@ -409,7 +430,7 @@ In order to start working Choregraphe we need to connect with Pepper.
 First we need to be connected to the same network as the robot, in our case the network is called ``legoland''.
 Once we are connected to the network, we can connect Choregraphe with Pepper. That can be done either by pressing Connection -> Connect to..., by pressing the green button in \ref{Topbar3} depicting an antenna with waves or by pressing Ctrl + Shift + C. \newline
 
-Now we need to know the IP address that Pepper is using. We can know that by touching the button behind the tablet the robot is holding. We just need to write the IP address and the port the robot says in the Choregraphe screen shown in \ref{Connect1}.
+Now we need to know the IP address that Pepper is using. We can know that by touching the button behind the tablet the robot is holding. We just need to write the IP address and the port the robot says in the Choregraphe screen shown in \ref{Connect1} .
 
 \begin{figure}[ht]
 	\centering
@@ -423,7 +444,7 @@ To disconnect we can use either $Connection \rightarrow Disconnect$, the red but
 
 
 \section{4.\ SPEECH RECOGNITION}
-One of the most interesting things in Choregraphe is the ``Speech Recognition'' block in \ref{Speech1}.
+One of the most interesting things in Choregraphe is the ``Speech Recognition'' block in \ref{Speech1} .
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.6]{speechreco1.png}
@@ -453,7 +474,7 @@ The most important parameters are:
 \end{itemize}
 
 \subsection{4.1.\ ANIMATIONS}
-There are a few animations already defined, as you can see in \ref{Animations1}.
+There are a few animations already defined, as you can see in \ref{Animations1} .
 
 \begin{figure}[ht]
 	\centering
@@ -550,7 +571,7 @@ We created the ``FollowCome'' behaviour, that implements both the ``Follow me'' 
 	\caption{FollowCome behaviour diagram.}
 	\label{FollowCome1}
 \end{figure}
-\newpage
+
 The only changes are inside FaceAndSpeech block and the animations have been replaced by new boxes. \newline
 
 FaceAndSpeech box had its wordlist and cases changed to use the new voice commands: ``Follow me'' and ``Come here''. \newline
@@ -566,6 +587,8 @@ The FollowActions box, which diagram is shown in \ref{FollowActions1}, starts wi
 	\caption{FollowActions box diagram.}
 	\label{FollowActions1}
 \end{figure}
+
+\newpage
 Then, it starts simmultaneously a Face Tracker box and a Speech Recognition box with two words in its wordlist: ``stop'' and ``blergh''.
 Only having one word in its wordlist will make the robot try to hear only that word, making a lot of false positives. \newline 
 
@@ -575,7 +598,7 @@ The Face Tracker box will make the robot move to the position of the face it is 
 
 When the robot is stopped, it says a phrase to let the user have some feedback. \newline
 
-The ``Come Here Actions'' box is more simple, as can be seen in \ref{ComeActions1}. \newline
+The ``Come Here Actions'' box is more simple, as can be seen in \ref{ComeActions1} . \newline
 
 \begin{figure}[!ht]
 	\centering
@@ -621,6 +644,7 @@ When the user greets the robot, the ``Face Learner'' box is executed, that has t
 	\label{FaceLearner1}
 \end{figure}
 
+\newpage
 It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.\newline
 
 Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name. \newline
@@ -690,7 +714,7 @@ The other difference between this box and the previous one is that this one has 
 If the face is new, the ``Greet Known'' box will be executed. Otherwise the ``Greet unknown'' box will be executed. \newline
 
 
-The diagram of Greet unknown box is the one appearing in\ref{GreetUnknown1}.
+The diagram of Greet unknown box is the one appearing in \ref{GreetUnknown1} .
 
 \begin{figure}[ht]
 	\centering
@@ -737,7 +761,7 @@ When the PraiseTheSun box ends, the Greet Known will end too. \newline
 
 After that, the same boxes that will be executed if you answer ``No'' in the Greet unknown box will be executed, leading also to the Dialog box.\newline 
 
-The Dialog box has a complex behaviour as can be seen in the figure \ref{DialogBox1}.
+The Dialog box has a complex behaviour as can be seen in the figure \ref{DialogBox1} .
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.5]{dialogbox1.png}
@@ -786,13 +810,26 @@ The ChangeImage box, with the diagram that appears in \ref{ChangeImage1}, change
 	\label{ESIIABMap}
 \end{figure}
 
-\newpage
 After the farewell option was used and the robot has said goodbye, the Dialog box ends and the FaceLearner box will be run again.
+
+\newpage
 \section{7.\ CONCLUSIONS}
+In conclusion we have learnt how Robot pepper works, the designer of the robot provides a special enviroment to design behaviors  and a interface where you can see the robot robot responses or simulate one to validate de behaviors design. \newline
+
+This type of enviroment permits the user the posibility of program behaviors without writting code, but sometimes it increase the difficult when you have to make complex behaviors. \newline
+
+We have implemented behaviours based on human-robot interaction, so it is so important that the robot have to maintenance the interaction and the contact with the person who is talking to it. \newline
+
+In order to it is necesary use an important block called Face tracker, this block provides the robot the hability of face recognition, and follow the person which it is in interaction with it. \newline
+
+Finally we identify that there are differents level of quality between the models designed by us and the installed packages from the designer, the reason it is simple with the blocks diagram and design a bit part of quality it is lost, with the code you can get more precision and better results that is why you personalize the code for the activity preferences. The blocks defined in the interface could be used for all types of behaviors that why we lose some precision as we have said before. \newline
+
+It was an interesting project where we have the opportunity to work with one of the most modern commercial robot and we have learnt how to use the environment to perform the human-computer interaction, we know if the designer increase sensors cameras precision it could work in a lot of different places based on Human-compute
+for example reception, museums, schools and a lot of different places providing quality information.
 
 \clearpage
 
-\section[8. REFERENCES]{7. REFERENCES}
+\section[8. REFERENCES]{8. REFERENCES}
 
 \begingroup
 \renewcommand{\section}[2]{}%
@@ -801,31 +838,39 @@ After the farewell option was used and the robot has said goodbye, the Dialog bo
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL}
 
-\bibitem{AP} Apache Cordova, cordova.apache.org. Consultado el 10 de Abril del 2018. \url{https://cordova.apache.org/docs/en/latest/}
+\bibitem{Arkin} Arkin, R. C. (1998). \textit{Behavior-Based Robotics (Intelligent Robotics and Autonomous Agents)}. MIT Press.
 
-\bibitem{AR} ArcGIS for Developers, developers.arcgis.com. Consultado el 14 de Abril del 2018. \url{https://developers.arcgis.com/}
+\bibitem{Bekey} Bekey, G. (2005). \textit{Autonomous Robots: From Biological Inspiration to Implementation and Control}. MIT Press.
 
-\bibitem{BOUS} Bouskela, Mauricio., et al (2016),\textit{La ruta hacia las Smart Cities: Migrando de una gestión tradicional a la ciudad inteligente}. Banco Interamericano de Desarrollo.
+\bibitem{Murphy} Murphy, R. R. (2000). \textit{Introduction to AI Robotics}. MIT Press.
 
-\bibitem{DGT} Dirección General de Tráfico, www.dgt.es. Consultado el 13 de Abril de 2018. \url{http://revista.dgt.es/es/categorias/distracciones-moviles.shtml}
+\bibitem{PHIL} Robo-Phil. (2014). \textit{Robo-Phil YouTube Channel}. Retrieved April, 2018 from \url{https://www.youtube.com/user/robotphilip/videos}
 
-\bibitem{IBM} IBM Cloudant, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud/cloudant}
+\bibitem{SOFTBANK} Softbank Robotics. (2017). \textit{Softbank Robotics Documentation}. Retrieved April 10, 2018 from \url{http://doc.aldebaran.com/}
 
-\bibitem{IBMII} IBM Bluemix, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud-computing/bluemix/es}
+%\bibitem{AR} ArcGIS for Developers, developers.arcgis.com. Consultado el 14 de Abril del 2018. \url{https://developers.arcgis.com/}
 
-\bibitem{IO} Ionic, www.ionicframework.com. Consultado el 11 de Abril del 2018. \url{https://ionicframework.com/docs/}
+%\bibitem{BOUS} Bouskela, Mauricio., et al (2016),\textit{La ruta hacia las Smart Cities: Migrando de una gestión tradicional a la ciudad inteligente}. Banco Interamericano de Desarrollo.
 
-\bibitem{JA} Marco de Desarrollo de la Junta de Andalucia, \textit{Conceptos sobre Escalabilidad}, Consultado el 10 de Abril de 2018. \url{http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/220}
+%\bibitem{DGT} Dirección General de Tráfico, www.dgt.es. Consultado el 13 de Abril de 2018. \url{http://revista.dgt.es/es/categorias/distracciones-moviles.shtml}
 
-\bibitem{NODE} Node-RED, www.nodered.org. Consultado el 16 de Abril del 2018. \url{https://nodered.org/docs/platforms/bluemix}
+%\bibitem{IBM} IBM Cloudant, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud/cloudant}
 
-\bibitem{NOSQL} Pandorafms, \textit{Bases de Datos NoSQL}, pandorafms.org. Consultado el 12 de Abril de 2018. \url{https://blog.pandorafms.org/es/bases-de-datos-nosql/}
+%\bibitem{IBMII} IBM Bluemix, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud-computing/bluemix/es}
 
-\bibitem{UCLM} Universidad de Castilla-la Mancha. www.uclm.es. Consultado el 9 de Abril de 2018. \url{https://eventos.uclm.es/19833/detail/hack-for-albacity.html}
+%\bibitem{IO} Ionic, www.ionicframework.com. Consultado el 11 de Abril del 2018. \url{https://ionicframework.com/docs/}
 
-\bibitem{URB} URBIOTICA (2008), www.urbiotica.com. Consultado el 18 de Abril del 2018. \url{http://www.urbiotica.com/producto/u-spot/}
+%\bibitem{JA} Marco de Desarrollo de la Junta de Andalucia, \textit{Conceptos sobre Escalabilidad}, Consultado el 10 de Abril de 2018. \url{http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/220}
 
-\bibitem{W3} W3Schools (1998), www.w3schools.com. Consultado el 15 de Abril del 2018. \url{https://www.w3schools.com/nodejs/default.asp}
+%\bibitem{NODE} Node-RED, www.nodered.org. Consultado el 16 de Abril del 2018. \url{https://nodered.org/docs/platforms/bluemix}
+
+%\bibitem{NOSQL} Pandorafms, \textit{Bases de Datos NoSQL}, pandorafms.org. Consultado el 12 de Abril de 2018. \url{https://blog.pandorafms.org/es/bases-de-datos-nosql/}
+
+%\bibitem{UCLM} Universidad de Castilla-la Mancha. www.uclm.es. Consultado el 9 de Abril de 2018. \url{https://eventos.uclm.es/19833/detail/hack-for-albacity.html}
+
+%\bibitem{URB} URBIOTICA (2008), www.urbiotica.com. Consultado el 18 de Abril del 2018. \url{http://www.urbiotica.com/producto/u-spot/}
+
+%\bibitem{W3} W3Schools (1998), www.w3schools.com. Consultado el 15 de Abril del 2018. \url{https://www.w3schools.com/nodejs/default.asp}
 
 \end{thebibliography}
 
@@ -835,31 +880,27 @@ After the farewell option was used and the robot has said goodbye, the Dialog bo
 
 \section{ANNEXES}
 \bigskip
-\subsection{ANNEX I \ ENLACES DE CONTENIDO}
+\subsection{ANNEX I \ CONTENT LINKS}
 
 \bigskip 
 \begin{itemize}
-\item \textbf{Enlace a la WebApp:} \newline
-\url{https://git.eu-gb.bluemix.net/HernanIndibil.LaCruz/Hackaton-Skyhold-Web}
+\item \textbf{Pepper Speech Commands:} \newline
+\url{https://www.youtube.com/watch?v=JPsfOQUvkfc}
 
-\item \textbf{(Aplicación de mapas en ejecución):} \newline
-\url{https://hackaton-skyhold-web.eu-gb.mybluemix.net/}
+\item \textbf{Pepper Follow Me and Come Here:} \newline
+\url{https://www.youtube.com/watch?v=6oiSZy8PI6E}
 
-\item \textbf{Documentación (presentación y memoria):} \newline
-\url{https://git.eu-gb.bluemix.net/HernanIndibil.LaCruz/Hackaton-Skyhold-Web/tree/master/DOCS}
+\item \textbf{Pepper People Recognition:} \newline
+\url{https://www.youtube.com/watch?v=yw0ogmP6dO8}
 
-\item \textbf{Node-RED:} \newline
-\url{https://git.eu-gb.bluemix.net/HernanIndibil.LaCruz/Hackaton-Skyhold-RED}
+\item \textbf{Pepper Dialog:} \newline
+\url{https://www.youtube.com/watch?v=crDNVtnfmrY}
 
-\item \textbf{(Editor de Node-RED):} \newline
-\url{https://hackaton-skyhold-red.eu-gb.mybluemix.net/red/}
-
-\item \textbf{Repositorio de la Aplicación:} \newline
-\url{https://github.com/Mowstyl/Hackaton-Skyhold-App}
+\item \textbf{Project Repository:} \newline
+\url{https://github.com/zorniffler/Pepper-behaviors}
 
 \end{itemize}
 \bigskip
-\textbf{ACLARACIÓN:} \textit{Los diferentes servicios serán públicos o se proveerán los accesos necesarios a los mismos.}
 
 \bigskip
 \bigskip

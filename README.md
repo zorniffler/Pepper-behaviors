@@ -1,11 +1,11 @@
-# Project: Human-robot interaction (HRI) with Robot Pepper
+# Project: Human-robot interaction (HRI) with Robot Pepper.
 
-* Robotic platform: Pepper
-* Development framework: Naoqi, Choregraphe, [Extra: ROS]
+* Robotic platform: Pepper.
+* Development framework: Naoqi, Choregraphe.
 
 ## This project consists on the study and development of different behaviours using the Pepper robot.
 
-## Tasks to be addressed:
+## Tasks presented in this repository:
 
    * Study of the proposal. Choregraphe.
    * Assign speech commands to predefined animations in Choregraphe.

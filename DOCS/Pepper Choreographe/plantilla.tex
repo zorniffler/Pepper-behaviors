@@ -180,7 +180,7 @@ HUMAN-ROBOT INTERACTION (HRI) WITH ROBOT PEPPER
 \vfill % Rellena espacio automáticamente hasta ajustar al margen inferior 
 
 \noindent Authors: 
-\newline Hernan Indíbil de la Cruz Calvo.
+\newline Hernán Indíbil de la Cruz Calvo.
 \newline Alejandro Zornoza Martínez.
 
 \vskip 1em 
@@ -200,7 +200,7 @@ HUMAN-ROBOT INTERACTION (HRI) WITH ROBOT PEPPER
 \setcounter{tocdepth}{10}
 \pagenumbering{roman}
 \setcounter{page}{1}
-\renewcommand\contentsname{\'Indice de contenido}
+\renewcommand\contentsname{Table of contents}
 \tableofcontents
 
 \newpage
@@ -212,37 +212,26 @@ HUMAN-ROBOT INTERACTION (HRI) WITH ROBOT PEPPER
 \pagestyle{plain}
 \pagenumbering{arabic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% CONTENIDO %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% CONTENT %%%%%%%%%%%%%%%%%%%%%
 \section{1.\ INTRODUCTION}
 
-%El cap\'itulo de introducci\'on podr\'a abordar los siguientes aspectos:
+Nowadays with the evolution of technology and advances in recognition and speech algorithms, the capabilities of the robots are incrementing really fast. That it is the reason why a lot of companies are working on robot development. Robots will provide humans a lot of tools that will make their life easier.\newline
 
-%\liststyleWWNumxxix
-%\begin{itemize}
-%\item Introducci\'on al tema, entorno en el que el trabajo desempe\~nar\'a su objetivo, \ justificaci\'on de la
-%importancia del trabajo abordado.
-%\item Motivaci\'on y antecedentes (con algunas referencias bibliogr\'aficas).
-%\item Descripci\'on gr\'afica del proyecto (es aconsejable incorporar una figura que describa el trabajo a desarrollar y
-%que mejore la comprensi\'on del mismo).
-%\end{itemize}
+With the advances accomplished in the HRI (human robot interaction), we can provide the robots with skills that help them to interact with humans and exchange information between them. \newline
 
-Nowadays with the evolution of technology and advances in recognition and speech algorithms, the capacibility of the robots increment so fast, that it is the reason why a lot of companies are working on robot development, robots will provide humans a lot of tools that they could make their life more easier.\newline
+The HRI is a multidisciplinary field with a lot of contributions from AI (Artificial Intelligence), mechanic advances, robotic design, natural language understanding and social science. \newline
 
-With the advance accomplished in the HRI(human robot interaction), we can provide to the robots habilities that help them to interact with humans and exchange information between them. \newline
+This science set works all time to improve the capabilities of the robots, making them stronger with better motors, making them more intelligent, making them more social and finally improving their natural language understanding and better in people recognition. \newline
 
-The HRI(human robot interaction) is a multidisciplinary field with a lot of contributions from artificial intelligences, mecanics advances, robotics design, natural language understanding and social science. \newline
+We have learnt during practices how the robot acts in different conditions and environments. Now we are able to work with one of the most advanced robot in HRI, Pepper. \newline
 
-These set of science are working all time from improve the capabilities of the robots, making them strongers with better motors, making them more intelligent, making them more social and finally improving their natural language understanding and better in people recognition. \newline
+Pepper is a human-shaped robot. It was designed for being a genuine day-to-day companion which has the ability to perceive emotions and answer depending the type of them.\newline
 
-We have learnt during practices how the robot acts depending diferent conditions and enviroments and now we are able to try to work with one of the most advanced robot in HRI that it is called Pepper. \newline
+The body of Pepper is prepared for communicate with the people with the most natural and intuitive body language, giving it a friendly attitude and voice. \newline
 
-Pepper is a human-shaped robot, that it was design for being a genuine day-to-day companion, which it has the hability to perceive emotions and answer depending the type of them.\newline
+With the memory capability the user can personalize the robot downloading software applications, and adapts itself to user tastes and habits. We have to remember that his skills are provided by researcher groups from around the world, and the union of all of them permits it design. \newline
 
-The body of Pepper it is preparied for communicate with the people with the most natural and intuitive body language, giving it a friendly actitude and voice. \newline
-
-With the memory capability the user can personalise the robot downloading the software applications and adapts himself to user tastes and habits. We  have to remember that his habilities are provided by researchers groups from around the world and the joing of all of them permits it design. \newline
-
-In this project we are going to try to development our personal behaviours for Pepper and learning who a robot with these caracteristics acts, especially in face recognition, speak dialogs, hear words and move around following special orders defined by us. \newline
+In this project we are going to try to develop our personal behaviours for Pepper, and learning how a robot with these characteristics acts, especially in face recognition, speak dialogs, hear words and move around following special orders defined by us. \newline
 
 \begin{figure}[ht]
 	\centering
@@ -274,24 +263,24 @@ We have to do a study of the proposal, Choregraphe, as well as developing four d
 
 \section{3.\ PRELIMINARIES}
 \subsection{3.1.\ CHOREOGRAPHE}
-We have to provide to the reader the enough knowledge about the development environment called choregraphe. We use it in this project to perform the human-robot interaction with Robot Pepper. One of the benefits of using this enviroment it is that the user do not need a lot of knowledge about programming in code. The reason is simple, it provides a toolbox diagram enviroment where the user can move and connect boxes that are defined to simulate the robot behavior. \newline
+We have to provide the reader with enough knowledge about the development environment, called Choregraphe. We use it in this project to perform the human-robot interaction with Robot Pepper. One of the benefits of using this environment it is that the user does not need a lot of knowledge about programming with a certain language. The reason is simple: it provides a toolbox diagram environment, where the user can move and connect boxes (predefined or custom) to control the behavior of the robot. \newline
 
-We will provide to the reader a tiny guide of using this enviroment and how we use to design the robot behaviors. \newline
+We will provide the reader a tiny guide about using this environment and how we use it to design the behaviors of the robot. \newline
 
-First of all, we have to show the first interface page of choregraphe, but we have to remember first that the choregraphe installation package include other importants tools that we have to tell to the reader. \newline
+First of all, we have to show the main interface page in Choregraphe, but we have to remember first that the Choregraphe installation package include other important tools that we have to tell to the reader. \newline
 
 The installation package includes:
 
 \begin{itemize}
-	\item Choregraphe 2.5.5 development tool: That it is the enviroment for design. We will explain more about it in other sections after that.
-	\item NAO Documentation 2.5.5 : All relevant information about robots, enviroment, how to install, and uses are included there. It is importante documentation that the user can use to perform his hability while he is working with the robots, it includes documentation about Pepper, Nao and Romeo.
-	\item Memory Backup 2.5.5: It provides the posibility of safe the robot state when we are working on it, it can save previusly installations and we can recover them if the user think it it necesary. This tool have two principal uses, the first one, save data installed on the robot and the second one restore data from the user computer to robot memory.
-	\item Monitor 2.5.5: It provides the tools for monitoring and take information about memory and cameras data, we did not use it for this project.
+	\item Choregraphe 2.5.5 development tool: This is the environment for design. We will explain more about it in other sections.
+	\item NAO Documentation 2.5.5 : All relevant information about robots, environment, how to install, and uses are included there. It is important documentation that can be used to improve your ability while you are working with the robots. It includes documentation about Pepper, Nao and Romeo.
+	\item Memory Backup 2.5.5: It provides the possibility of saving the state of the robot. It can save previous installations and we can recover them if the user thinks it it necessary. This tool has two principal uses: the first one, save data installed on the robot and the second one restore data from the user's computer to the memory of the robot.
+	\item Monitor 2.5.5: It provides the tools to monitor and get information about memory and camera data. Not used in this project.
 \end{itemize}
 
-Well, to start with we are going to explain all the information about the Choregraphe 2.5.5 development tool, and we will teach all the steps that we follow for make the project tasks. \newline
+To start we are going to explain all the information about the Choregraphe 2.5.5 development tool, and we will teach all the steps that we need to follow to make the project. \newline
 
-First of all, we open the Choregraphe 2.5.5 development tool and we can see the interface that we provide in the image  \ref{Choregrapheinterface} .
+First of all, we open the Choregraphe 2.5.5 development tool. We can see the interface that we provide in the image  \ref{Choregrapheinterface} .
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.3]{1choregraphe.png}
@@ -299,14 +288,14 @@ First of all, we open the Choregraphe 2.5.5 development tool and we can see the 
 	\label{Choregrapheinterface}
 \end{figure}
 
-At the Getting started window we can see diferent options:
+At the Getting started window we can see different options:
 
 \begin{itemize}
 	\item Create a robot application: \begin{itemize} \item New project. \item Import project from CRG file. \item Import project from former project directory. \item Open project. \end{itemize}
 	\item Documentation: \begin{itemize} \item Choregraphe guide. \item Coding in Python. \item Scripting in Choregraphe. \item Writing dialogs in Choregraphe. \end{itemize}
 \end{itemize}
 
-In addition the interface contains a top bar, one left bar and one right bar. \newline
+In addition the interface contains a top bar, a left bar and a right bar. \newline
 
 \newpage
 The top bar \ref{Topbar} contains the options for:
@@ -348,7 +337,7 @@ The top bar \ref{Topbar} contains the options for:
 			\label{Topbar2}			
 		\end{figure}
 		
-		\item The third rectangle \ref{Topbar3} provides the posibility of connect and disconnect to a robot or a simulate robot.
+		\item The third rectangle \ref{Topbar3} provides the possibility of connect and disconnect to a robot or a simulate robot.
 		\begin{figure}[!ht]
 			\centering
 			\includegraphics[scale=0.5]{2topbar3.png}
@@ -367,14 +356,14 @@ The top bar \ref{Topbar} contains the options for:
 		\begin{figure}[!ht]
 			\centering
 			\includegraphics[scale=0.4]{2topbar5.png}
-			\caption{Image of the top bar fiveth rectangle.}
+			\caption{Image of the top bar fifth rectangle.}
 			\label{Topbar5}		
 		\end{figure}		
 	\end{itemize}	
 \end{itemize}
 
 \newpage
-Also, we are going to continue giving information about other parts of the main menu interface, at the left side we can see this menu blocks \ref{leftbar1} .
+Also, we are going to continue giving information about the other parts of the main menu interface. At the left side we can see the menu blocks in \ref{leftbar1} .
 
 \begin{figure}[!ht]
 	\centering
@@ -384,9 +373,9 @@ Also, we are going to continue giving information about other parts of the main 
 \end{figure}
 		
 		
-In this part the reader can see two different zones: the first one, at the top it provides information about project files, in the plus mark, you can create new behaviors, dialogs, planar moves, directories, or import files from other selected directories. \newline
+In this part the reader can see two different zones: the first one, at the top, provides information about project files. In the plus mark you can create new behaviors, dialogs, planar moves, directories, or import files from other selected directories. \newline
 
-The last one provides the user box libraries which will help the user to program the robot behaviors. It have 7 categories called:
+The last one provides the user box libraries which will help the user to program the robot behaviors. It has 7 categories called:
 
 \begin{itemize}
 	\item Animation.
@@ -398,9 +387,9 @@ The last one provides the user box libraries which will help the user to program
 	\item Programming.
 \end{itemize} 
 
-We will explain better in future sections giving relevant information about the utility of these categories and the different types of boxes that they provide.\newline
+We will explain it better in future sections, giving relevant information about the utility of these categories and the different types of boxes that they provide.\newline
 
-On the other side, the right bar \ref{rightbar1} , it provides a video image of the robot where the user can see what is doing the robot doing, objects that are in front of him, and the currently distance of them. It is a place where you can test the robot behavior and the user can validate and test the designed behaviors. \newpage
+On the other side we have the right bar that can be seen in \ref{rightbar1}. It provides a video image of the robot where the user can see what is the robot doing, objects that are in front of him, and the current distance to them. It is a place where you can test the robot behavior and the user can validate and test the designed behaviors. \newpage
 
 %% right bar
 \begin{figure}[!t]
@@ -412,7 +401,7 @@ On the other side, the right bar \ref{rightbar1} , it provides a video image of 
 
 At the bottom, the user can see packages that are installed into the robot and options for install new ones or delete one of them.\newline
 
-Finally,in the middle \ref{middledesignpart} , we have the space for the block designing.
+Finally, in the middle we can see the same as in \ref{middledesignpart}. There we have the block designing space.
 
 \begin{figure}[!ht]
 	\centering
@@ -421,9 +410,9 @@ Finally,in the middle \ref{middledesignpart} , we have the space for the block d
 	\label{middledesignpart}
 \end{figure}
 
-At the top the reader can see timelines blocks, it contains block that will show other block designing space. In the middle the user can drop blocks for making his behaviours, he have to connect the first one to the left arrow and the last one in the other side, at the right arrow.\newline
+At the top the reader can see timeline blocks. It contains blocks that will show other block designing space. In the middle, the user can drop blocks to mark his behaviours. The user has to connect the first one to the left arrow and the last one in the other side, at the right arrow.\newline
 
-At the bottom the reader can see the log viewer for see error details, he can use the dialog text for writting messages to the robot, it provides to the user that he do not need to talk if he want to test for example a speech recognition block.
+At the bottom the reader can see the log viewer to see error details. The user can use the dialog text to write messages to the robot. It lets the user to write instead of talking in case we want to test a speech recognition block.
 
 \subsection{3.2.\ HOW TO CONNECT TO PEPPER}
 In order to start working Choregraphe we need to connect with Pepper.
@@ -464,7 +453,7 @@ Outputs:
 \begin{itemize}
 	\item onStopped: type ``Bang''. Sends a signal after the box behaviour has stopped. Marked with a vertical red line with a black play symbol on its right side.
 	\item wordRecognized: type ``String''. Sends the word the robot has recognized.
-	\item onNothing: type ``Bang''. Sends a signal if Pepper has not heard anything during a certain timelapse.
+	\item onNothing: type ``Bang''. Sends a signal if Pepper has not heard anything during a certain time lapse.
 \end{itemize}
 
 The most important parameters are:
@@ -505,7 +494,7 @@ We have created a behaviour called ``SpeechCommands'' that has to perform an ani
 	\label{SpeechCommands1}
 \end{figure}
 
-Firts we need to ``Wake Up'' the robot, otherwise it will not be able to perform anything. \newline
+First we need to ``Wake Up'' the robot, otherwise it will not be able to perform anything. \newline
 
 We created a block composed by more blocks in order to do that, called ``Awaken'' block. \newline 
 
@@ -558,7 +547,7 @@ This block has a Face Tracking box, a Speech Recognition box and a Switch box. T
 
 Since we wanted to make the robot more realistic, we added a Face Tracking box to make it follow the face of the person talking to it. \newline
 
-The Speech Recognition box has in its wordlist the words ``Football'' and ``Gorilla''. The Switch box has only three cases, one for each word in the wordlist and another one for the ``end'' word. If someone writes ``end'' in Pepper's console, this case will be triggered. \newline
+The Speech Recognition box has in its word list the words ``Football'' and ``Gorilla''. The Switch box has only three cases, one for each word in the word list and another one for the ``end'' word. If someone writes ``end'' in Pepper's console, this case will be triggered. \newline
 
 After the FaceAndSpeech box we have the animations and the message the robot says when it is told to stop.
 
@@ -574,7 +563,7 @@ We created the ``FollowCome'' behaviour, that implements both the ``Follow me'' 
 
 The only changes are inside FaceAndSpeech block and the animations have been replaced by new boxes. \newline
 
-FaceAndSpeech box had its wordlist and cases changed to use the new voice commands: ``Follow me'' and ``Come here''. \newline
+FaceAndSpeech box had its word list and cases changed to use the new voice commands: ``Follow me'' and ``Come here''. \newline
 Instead of animations, we now have two new blocks: ``FollowActions'' and ``Come Here Actions''. \newline
 
 They both have the same inputs and outputs, none other than onStart, onStop and onStopped. \newline
@@ -589,8 +578,8 @@ The FollowActions box, which diagram is shown in \ref{FollowActions1}, starts wi
 \end{figure}
 
 \newpage
-Then, it starts simmultaneously a Face Tracker box and a Speech Recognition box with two words in its wordlist: ``stop'' and ``blergh''.
-Only having one word in its wordlist will make the robot try to hear only that word, making a lot of false positives. \newline 
+Then, it starts simultaneously a Face Tracker box and a Speech Recognition box with two words in its word list: ``stop'' and ``blergh''.
+Only having one word in its word list will make the robot try to hear only that word, making a lot of false positives. \newline 
 
 After that box, a Switch box will stop everything when the robot hears ``stop'', and will do nothing otherwise. \newline
 
@@ -611,14 +600,14 @@ It starts and end with say blocks, to let the user have some feedback. \newline
 
 In the middle of those blocks, there is a face tracking box that moves the robot to the position of the user and stops when it reaches its target.\newline 
 
-One important thing to take in account when using Choregraphe is that all the tracking and speech recognition blocks of the same type in the same diagram will be activated simmultaneously. \newline
+One important thing to take in account when using Choregraphe is that all the tracking and speech recognition blocks of the same type in the same diagram will be activated simultaneously. \newline
 
 That is to say: if you put two different Speech Recognition boxes in the same diagram, when you start one of them the other will start too, and if you stop one of them the other will also be stopped.\newline
 
 The same happens to Face Tracking blocks. That's why we created complex boxes with smaller behaviours that only need one tracking box of each type as much. It helps us organize our work as well as fixing that problem.
 
 \section{5.\ FACE RECOGNITION}
-Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing proccess. \newline
+Pepper has a Face Learning module, that lets her to learn a face and to recognize it later. Subsequent learnings of the same face allows Pepper to speed up the recognizing process. \newline
 
 We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper greet someone unknown to her and ask his/her name, in order to store the face. When Pepper meets someone whose face is already stored, she will greet that person by his/her name. 
 
@@ -631,7 +620,7 @@ We have created the behaviour ``Faces'', shown in \ref{Faces1}, that lets Pepper
 
 Again, the diagram is very similar to those of the previous behaviours.\newline
 
-We had to change the wordlist and cases in FaceAndSpeech box, as well as the blocks that execute after it outputs something. \newline
+We had to change the word list and cases in FaceAndSpeech box, as well as the blocks that execute after it outputs something. \newline
 
 We have two new blocks, both with onStart and onStop inputs and the onStopped output that restarts the FaceAndSpeech box like in the previous behaviours.\newline
 
@@ -645,11 +634,11 @@ When the user greets the robot, the ``Face Learner'' box is executed, that has t
 \end{figure}
 
 \newpage
-It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeded in its task, the robot will greet the user and will say the user's name.\newline
+It starts trying to recognize the user's face with the ``Face Recognition'' box. If it succeed in its task, the robot will greet the user and will say the user's name.\newline
 
-Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The wordlist of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name. \newline
+Otherwise, the robot will ask for the user's name and will start a Speech Recognition box. The word list of this box has a list of possible user names. After hearing a name, the robot will learn the user's face with the heard name. \newline
 
-If it succeded in its task, the robot will say ``Nice to meet you''. Otherwise, the robot will answer with a quote of a poem written by William Blake.\newline 
+If it succeed in its task, the robot will say ``Nice to meet you''. Otherwise, the robot will answer with a quote of a poem written by William Blake.\newline 
 
 The other box, which diagram is the one appearing in \ref{FaceForget1}, is called ``Face Forget'' and lets us make the robot forget a certain face.
 \begin{figure}[!ht]
@@ -659,7 +648,7 @@ The other box, which diagram is the one appearing in \ref{FaceForget1}, is calle
 	\label{FaceForget1}
 \end{figure}
 
-The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its wordlist will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block. \newline
+The robot will ask for the name of the face the user wants it to forget. Again, a Speech Recognition box with a list of names as its word list will be activated. The robot will forget the face whose name the user has said using the ``Unlearn Face'' block. \newline
 
 Finally, the robot will tell the user whether it was able to forget the face or not.
 
@@ -814,18 +803,17 @@ After the farewell option was used and the robot has said goodbye, the Dialog bo
 
 \newpage
 \section{7.\ CONCLUSIONS}
-In conclusion we have learnt how Robot pepper works, the designer of the robot provides a special enviroment to design behaviors  and a interface where you can see the robot robot responses or simulate one to validate de behaviors design. \newline
+We have learnt how Robot Pepper works. The designer of the robot provides a special environment to design behaviors, as well as an interface where you can see the responses of the robot (or even simulate one) to validate the behaviours. \newline
 
-This type of enviroment permits the user the posibility of program behaviors without writting code, but sometimes it increase the difficult when you have to make complex behaviors. \newline
+This type of environment lets the user to program behaviours without writing code, but sometimes increases the difficulty when you have to make complex behaviors. \newline
 
-We have implemented behaviours based on human-robot interaction, so it is so important that the robot have to maintenance the interaction and the contact with the person who is talking to it. \newline
+We have implemented behaviours based on human-robot interaction, so it is important that the robot maintains the interaction and the contact with the person who is talking to. \newline
 
-In order to it is necesary use an important block called Face tracker, this block provides the robot the hability of face recognition, and follow the person which it is in interaction with it. \newline
+In order to do it, an important block should be used, the box called Face tracker. This block provides the robot the ability of face recognition, and follows the person which it is interacting with. \newline
 
-Finally we identify that there are differents level of quality between the models designed by us and the installed packages from the designer, the reason it is simple with the blocks diagram and design a bit part of quality it is lost, with the code you can get more precision and better results that is why you personalize the code for the activity preferences. The blocks defined in the interface could be used for all types of behaviors that why we lose some precision as we have said before. \newline
+Finally we identified that there are different levels of quality between the models designed by us and the installed packages from the designer. The reason is simple: with the block diagram and design a bit part of the quality it is lost, with the code you can get more precision and better results. That is why you can personalize the code for the activity preferences. The blocks defined in the interface could be used for all types of behaviors. \newline
 
-It was an interesting project where we have the opportunity to work with one of the most modern commercial robot and we have learnt how to use the environment to perform the human-computer interaction, we know if the designer increase sensors cameras precision it could work in a lot of different places based on Human-compute
-for example reception, museums, schools and a lot of different places providing quality information.
+It was an interesting project where we had the opportunity to work with one of the most modern commercial robot, and we have learnt how to use the environment to perform the human-computer interaction. If the designer increases the precision of the sensors and the cameras, it could work in a lot of different places based on Human-computer interaction, in example: receptions, museums, schools and a lot of different places providing quality information.
 
 \clearpage
 
@@ -847,30 +835,6 @@ for example reception, museums, schools and a lot of different places providing 
 \bibitem{PHIL} Robo-Phil. (2014). \textit{Robo-Phil YouTube Channel}. Retrieved April, 2018 from \url{https://www.youtube.com/user/robotphilip/videos}
 
 \bibitem{SOFTBANK} Softbank Robotics. (2017). \textit{Softbank Robotics Documentation}. Retrieved April 10, 2018 from \url{http://doc.aldebaran.com/}
-
-%\bibitem{AR} ArcGIS for Developers, developers.arcgis.com. Consultado el 14 de Abril del 2018. \url{https://developers.arcgis.com/}
-
-%\bibitem{BOUS} Bouskela, Mauricio., et al (2016),\textit{La ruta hacia las Smart Cities: Migrando de una gestión tradicional a la ciudad inteligente}. Banco Interamericano de Desarrollo.
-
-%\bibitem{DGT} Dirección General de Tráfico, www.dgt.es. Consultado el 13 de Abril de 2018. \url{http://revista.dgt.es/es/categorias/distracciones-moviles.shtml}
-
-%\bibitem{IBM} IBM Cloudant, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud/cloudant}
-
-%\bibitem{IBMII} IBM Bluemix, www.ibm.com. Consultado el 14 de Abril del 2018. \url{https://www.ibm.com/cloud-computing/bluemix/es}
-
-%\bibitem{IO} Ionic, www.ionicframework.com. Consultado el 11 de Abril del 2018. \url{https://ionicframework.com/docs/}
-
-%\bibitem{JA} Marco de Desarrollo de la Junta de Andalucia, \textit{Conceptos sobre Escalabilidad}, Consultado el 10 de Abril de 2018. \url{http://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/220}
-
-%\bibitem{NODE} Node-RED, www.nodered.org. Consultado el 16 de Abril del 2018. \url{https://nodered.org/docs/platforms/bluemix}
-
-%\bibitem{NOSQL} Pandorafms, \textit{Bases de Datos NoSQL}, pandorafms.org. Consultado el 12 de Abril de 2018. \url{https://blog.pandorafms.org/es/bases-de-datos-nosql/}
-
-%\bibitem{UCLM} Universidad de Castilla-la Mancha. www.uclm.es. Consultado el 9 de Abril de 2018. \url{https://eventos.uclm.es/19833/detail/hack-for-albacity.html}
-
-%\bibitem{URB} URBIOTICA (2008), www.urbiotica.com. Consultado el 18 de Abril del 2018. \url{http://www.urbiotica.com/producto/u-spot/}
-
-%\bibitem{W3} W3Schools (1998), www.w3schools.com. Consultado el 15 de Abril del 2018. \url{https://www.w3schools.com/nodejs/default.asp}
 
 \end{thebibliography}
 
